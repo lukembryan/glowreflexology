@@ -1,0 +1,42 @@
+import { slideUp } from '../animations';
+import { Component, OnInit } from '@angular/core';
+import { ConfigService } from '../../app/config.service';
+
+@Component({
+  selector: 'header',
+  templateUrl: './header.component.html',
+  styleUrls: ['./header.component.less'],
+  animations: [ slideUp ]
+})
+export class HeaderComponent implements OnInit {
+  currentRoute:string;
+
+  options = [
+    {
+      label: 'Reflexology',
+      route: '/about-reflexology'
+    },
+    {
+      label: 'What to expect',
+      route: '/what-to-expect'
+    },
+    {
+      label: 'Pricing',
+      route: '/pricing-offers'
+    },
+    {
+      label: 'About me',
+      route: '/about-me'
+    },
+    {
+      label: 'Contact',
+      route: '/contact'
+    },
+  ];
+
+  constructor(private config: ConfigService) { }
+
+  ngOnInit() {
+    this.config.currentRoute.subscribe(url => this.currentRoute = url);
+  }
+}

@@ -1,0 +1,48 @@
+@import "../assets/css/less/shared.less";
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  position: fixed;
+  top: 0;
+  background-color: transparent;
+  width: 100%;
+  padding: 30px 30px 0;
+  z-index: 2;
+  > ul.menu {
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+}
+
+#template {
+  padding-top: 90px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: scroll;
+  width: 100%;
+  bottom: 0;
+  background-image: url('../assets/images/blue-bright-clouds.jpg');
+  background-size: 300% 300%, contain;;
+  background-position: top left;
+  transition: all 0.3s ease-in-out;
+  &.about-reflexology {
+    background-position: bottom right;
+  }
+  &.what-to-expect {
+    background-position: top right;
+  }
+  &.pricing-offers {
+    background-position: bottom left;
+  }
+  &.about-me {
+    background-position: top center;
+  }
+  &.contact {
+    background-position: bottom center;
+  }
+  > router-outlet {
+    grid-row-start: none;
+  }
+}

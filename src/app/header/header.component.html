@@ -1,0 +1,7 @@
+<div class="logo" routerLink="/" *ngIf="currentRoute != '/'" @slideUp>
+	<span class="glow pacifico">glow</span>
+	<span class="reflexology lato">reflexology</span>
+</div>
+<ul class="menu">
+  <li class="link" routerLinkActive="active" *ngFor="let option of options" routerLink="{{option.route}}">{{option.label}}</li>
+</ul>
