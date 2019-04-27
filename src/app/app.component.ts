@@ -27,6 +27,8 @@ export class AppComponent implements OnInit {
         let currentUrlSlug = event.url.slice(1)
         this.renderer.addClass(document.body, (currentUrlSlug ? currentUrlSlug : 'home'));
         this.previousUrl = currentUrlSlug;
+        console.log(currentUrlSlug);
+        this.scrolledBottom = currentUrlSlug == '' ? true : false;
       }
     });
 
@@ -35,7 +37,6 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.config.currentRoute.subscribe(url => this.route = url.slice(1) ? url.slice(1) : 'home');
-    this.scrolledBottom = true;
   }
 
   onScroll(e){

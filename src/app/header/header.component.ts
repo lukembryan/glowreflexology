@@ -1,4 +1,4 @@
-import { slideUp } from '../animations';
+import { slideUp, slideRight, slideDown, fade } from '../animations';
 import { Component, OnInit } from '@angular/core';
 import { ConfigService } from '../../app/config.service';
 
@@ -6,7 +6,7 @@ import { ConfigService } from '../../app/config.service';
   selector: 'header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.less'],
-  animations: [ slideUp ]
+  animations: [ slideUp, slideRight, slideDown, fade ]
 })
 export class HeaderComponent implements OnInit {
   currentRoute:string;
