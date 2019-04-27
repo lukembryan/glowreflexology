@@ -39,3 +39,10 @@ export let slideUp = trigger('slideUp', [
   })),
   transition(':enter, :leave', [animate('300ms ease-in-out')])
 ]);
+
+export let slideDown = trigger('slideDown', [
+  state('void', style({
+    transform: 'translateY(100%)'
+  })),
+  transition(':enter, :leave', [animate('300ms ease-in-out')])
+]);

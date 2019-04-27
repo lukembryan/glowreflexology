@@ -1,5 +1,14 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<header></header>
-<div id="template" [@slideInAnimation]="o.isActivated ? o.activatedRoute : ''" [className]="route">
+<div class="responsive-test" *ngIf="dev">
+  <span>tiny</span>
+  <span>xxs</span>
+  <span>xs</span>
+  <span>sm</span>
+  <span>md</span>
+  <span>lg</span>
+  <span>xl</span>
+</div>
+<header [ngClass]="{'compact': scrolledDown}"></header>
+<div id="template" [@slideInAnimation]="o.isActivated ? o.activatedRoute : ''" [className]="route" (scroll)="onScroll($event)">
   <router-outlet #o="outlet"></router-outlet>
 </div>
+<footer [className]="route" *ngIf="scrolledBottom" @slideDown></footer>

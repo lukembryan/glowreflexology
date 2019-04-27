@@ -1,7 +1,13 @@
-<div class="logo" routerLink="/" *ngIf="currentRoute != '/'" @slideUp>
+<div class="logo" routerLink="/" @slideUp>
 	<span class="glow pacifico">glow</span>
 	<span class="reflexology lato">reflexology</span>
 </div>
-<ul class="menu">
+<ul class="menu" @slideUp>
+  <li class="link" [ngClass]="{'link-dark': currentRoute != '/' && !showMenu}" routerLinkActive="active" *ngFor="let option of options" routerLink="{{option.route}}">{{option.label}}</li>
+</ul>
+<ul class="menu menu-responsive" [ngClass]="{'menu-shown': showMenu}" *ngIf="showMenu" @slideUp>
   <li class="link" routerLinkActive="active" *ngFor="let option of options" routerLink="{{option.route}}">{{option.label}}</li>
 </ul>
+<i class="far fa-bars link" *ngIf="!showMenu" @slideUp (click)="toggle(true)"></i>
+<i class="far fa-times link" *ngIf="showMenu" @slideUp (click)="toggle(false)"></i>
+<div *ngIf="showMenu" class="overlay" @slideUp></div>

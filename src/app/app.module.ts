@@ -12,6 +12,9 @@ import { PricingOffersComponent } from './pricing-offers/pricing-offers.componen
 import { AboutMeComponent } from './about-me/about-me.component';
 import { ContactComponent } from './contact/contact.component';
 import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { CodeOfEthicsComponent } from './code-of-ethics/code-of-ethics.component';
+import { DataProtectionPolicyComponent } from './data-protection-policy/data-protection-policy.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import { HeaderComponent } from './header/header.component';
     PricingOffersComponent,
     AboutMeComponent,
     ContactComponent,
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent,
+    CodeOfEthicsComponent,
+    DataProtectionPolicyComponent
   ],
   imports: [
     BrowserModule,
@@ -54,6 +60,14 @@ import { HeaderComponent } from './header/header.component';
       {
         path: 'contact',
         component: ContactComponent
+      },
+      {
+        path: 'data-protection-policy',
+        component: DataProtectionPolicyComponent
+      },
+      {
+        path: 'code-of-ethics',
+        component: CodeOfEthicsComponent
       },
       {
         path: '**',

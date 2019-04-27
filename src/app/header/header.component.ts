@@ -10,6 +10,7 @@ import { ConfigService } from '../../app/config.service';
 })
 export class HeaderComponent implements OnInit {
   currentRoute:string;
+  showMenu:boolean;
 
   options = [
     {
@@ -38,5 +39,10 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit() {
     this.config.currentRoute.subscribe(url => this.currentRoute = url);
+    this.config.currentShowMenu.subscribe(show => this.showMenu = show);
+  }
+
+  toggle(show){
+    this.config.toggleMenu(show);
   }
 }

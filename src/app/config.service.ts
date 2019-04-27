@@ -1,6 +1,11 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 
+function _window() : any {
+  // return the global native browser window object
+  return window;
+}
+
 @Injectable({
   providedIn: 'root'
 })
@@ -9,6 +14,10 @@ export class ConfigService {
   private showMenu = new BehaviorSubject(false);
   currentRoute = this.route.asObservable();
   currentShowMenu = this.showMenu.asObservable();
+
+  get nativeWindow() : any {
+    return _window();
+  }
 
   constructor() { }
 
