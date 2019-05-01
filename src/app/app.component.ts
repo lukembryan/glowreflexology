@@ -1,6 +1,8 @@
 import { slideDown, slideInAnimation } from './animations';
 import { Component, OnInit, Renderer2 } from '@angular/core';
 import { Router, NavigationEnd, RouterOutlet } from '@angular/router';
+import { Title } from '@angular/platform-browser';
+
 import { ConfigService } from '../app/config.service';
 
 declare let gtag: Function;
@@ -19,7 +21,7 @@ export class AppComponent implements OnInit {
   dev:boolean;
   previousUrl:string;
 
-  constructor(private config: ConfigService, private router: Router, private renderer: Renderer2) {
+  constructor(private config: ConfigService, private router: Router, private renderer: Renderer2, private titleService: Title) {
     this.dev =  ['localhost', 'local.glowreflexology.co.uk'].indexOf(config.nativeWindow.location.hostname) >= 0;
 
     router.events.subscribe((event) => {
@@ -27,24 +29,34 @@ export class AppComponent implements OnInit {
         this.config.setRoute(event.url);
         this.config.toggleMenu(false);
 
-        if(!this.dev){
+        this.renderer.removeClass(document.body, this.previousUrl);
+
+        let currentUrlSlug = event.url.slice(1) ? event.url.slice(1) : 'home';
+
+        this.renderer.addClass(document.body, currentUrlSlug);
+        this.previousUrl = currentUrlSlug;
+
+        this.scrolledBottom = currentUrlSlug == 'home' ? true : false;
+
+        if(this.dev){
           gtag('config', 'UA-20448588-9', {
-            'page_title' : 'glow reflexology',
+            'page_title' : currentUrlSlug.replace(/\-/g, ' ') + ' - glow reflexology',
             'page_path': event.urlAfterRedirects
           });
         }
-
-        this.renderer.removeClass(document.body, (this.previousUrl ? this.previousUrl : 'home'));
-        let currentUrlSlug = event.url.slice(1)
-        this.renderer.addClass(document.body, (currentUrlSlug ? currentUrlSlug : 'home'));
-        this.previousUrl = currentUrlSlug;
-        this.scrolledBottom = currentUrlSlug == '' ? true : false;
       }
     });
   }
 
   ngOnInit(){
-    this.config.currentRoute.subscribe(url => this.route = url.slice(1) ? url.slice(1) : 'home');
+    this.config.currentRoute.subscribe(url => {
+      this.route = url.slice(1) ? url.slice(1) : 'home';
+      this.setTitle(this.route.replace(/\-/g, ' ') + ' - glow reflexology');
+    });
+  }
+
+  setTitle(newTitle: string) {
+    this.titleService.setTitle(newTitle);
   }
 
   onScroll(e){
