@@ -38,7 +38,7 @@ export class AppComponent implements OnInit {
 
         this.scrolledBottom = currentUrlSlug == 'home' ? true : false;
 
-        if(this.dev){
+        if(!this.dev){
           gtag('config', 'UA-20448588-9', {
             'page_title' : currentUrlSlug.replace(/\-/g, ' ') + ' - glow reflexology',
             'page_path': event.urlAfterRedirects
