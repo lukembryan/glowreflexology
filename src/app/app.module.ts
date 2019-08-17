@@ -15,6 +15,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { CodeOfEthicsComponent } from './code-of-ethics/code-of-ethics.component';
 import { DataProtectionPolicyComponent } from './data-protection-policy/data-protection-policy.component';
+import { MaternityComponent } from './maternity/maternity.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { DataProtectionPolicyComponent } from './data-protection-policy/data-pro
     HeaderComponent,
     FooterComponent,
     CodeOfEthicsComponent,
-    DataProtectionPolicyComponent
+    DataProtectionPolicyComponent,
+    MaternityComponent
   ],
   imports: [
     BrowserModule,
@@ -48,6 +50,10 @@ import { DataProtectionPolicyComponent } from './data-protection-policy/data-pro
       {
         path: 'what-to-expect',
         component: WhatToExpectComponent
+      },
+      {
+        path: 'maternity',
+        component: MaternityComponent
       },
       {
         path: 'pricing-offers',

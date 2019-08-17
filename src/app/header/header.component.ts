@@ -18,6 +18,10 @@ export class HeaderComponent implements OnInit {
       route: '/about-reflexology'
     },
     {
+      label: 'Maternity',
+      route: '/maternity'
+    },
+    {
       label: 'What to expect',
       route: '/what-to-expect'
     },

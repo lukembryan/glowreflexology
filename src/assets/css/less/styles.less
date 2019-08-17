@@ -50,6 +50,18 @@ a, .link {
   }
 }
 
+button.btn {
+  color: darken(@light-yellow, 10%);
+  background-color: transparent;
+  border: 1px solid darken(@light-yellow, 10%);
+  transition: 0.3s ease-in-out;
+  &:hover, &:focus {
+    color: @light-yellow;
+    background-color: transparent;
+    border: 1px solid @light-yellow;
+  }
+}
+
 h1 {
   font-family: 'Pacifico', cursive;
   line-height: 0.7;
@@ -59,12 +71,6 @@ h1 {
 h2 {
   line-height: 1.2;
   font-size: 2em;
-  &.home {
-    font-size: 5em;
-    font-weight: 300;
-    padding: 5%;
-    text-align: right;
-  }
 }
 
 h3 {
@@ -77,6 +83,12 @@ h4 {
   font-size: 1.2em;
   font-weight: 300;
   margin: 30px 0 20px;
+}
+
+h5 {
+  font-size: 1.1em;
+  font-weight: 300;
+  margin: 20px 0 15px;
 }
 
 p {
@@ -342,7 +354,7 @@ i.fa-bars, i.fa-times {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-auto-rows: min-content;
   grid-gap: 50px 30px;
-  padding: 30px 30px 100px;
+  padding: 9% 30px 100px;
   .screen-xxs-max({
     padding: 30px;
   });
@@ -361,16 +373,27 @@ i.fa-bars, i.fa-times {
         align-self: center;
       });
     }
-    > h2 {
+    > .body-copy {
       grid-column: 4/9;
-      font-weight: 100;
+      text-align: right;
       .screen-xs-max({
         grid-column: 1/9;
         text-align: center;
       });
-      .screen-sm-max({ font-size: 3.3em; });
-      .screen-xxs-max({ font-size: 2em; });
-      .screen-md({ font-size: 4.5em; });
+      > h2 {
+        font-weight: 100;
+        font-size: 5em;
+        padding: 5%;
+        .screen-sm-max({ font-size: 3.3em; });
+        .screen-xxs-max({ font-size: 2em; });
+        .screen-md({ font-size: 4.5em; });
+      }
+      > .link {
+        width: auto;
+        margin: 5%;
+        font-size: 1.3em;
+        text-transform: uppercase;
+      }
     }
     > .bg {
       position: fixed;
@@ -385,7 +408,7 @@ i.fa-bars, i.fa-times {
   }
   &.about-reflexology {
     > .title {
-      grid-column: 1/6;
+      grid-column: 2/8;
       grid-row: 1/2;
       .screen-xs-max({
         grid-column: 1/9;
@@ -393,7 +416,7 @@ i.fa-bars, i.fa-times {
       });
     }
     > h3 {
-      grid-column: 1/6;
+      grid-column: 2/5;
       grid-row: 2/3;
       margin: 0;
       .screen-xs-max({
@@ -402,8 +425,8 @@ i.fa-bars, i.fa-times {
       });
     }
     > .image {
-      grid-column: 6/9;
-      grid-row: 1/5;
+      grid-column: 5/8;
+      grid-row: 2/5;
       .screen-xs-max({
         grid-column: 1/9;
         grid-row: 1/2;
@@ -412,7 +435,7 @@ i.fa-bars, i.fa-times {
       background-position: bottom right;
     }
     > .body-copy {
-      grid-column: 1/5;
+      grid-column: 2/5;
       grid-row: 3/4;
       .screen-xs-max({
         grid-column: 1/9;
@@ -424,29 +447,10 @@ i.fa-bars, i.fa-times {
       }
     }
   }
-  &.contact {
+  &.maternity {
+    grid-auto-flow: column;
     > .title {
-      grid-column: 1/4;
-      .screen-xs-max({
-        grid-column: 1/9;
-      });
-    }
-    > .details {
-      grid-column: 1/4;
-      .screen-xs-max({
-        grid-column: 1/9;
-      });
-    }
-    > .body-copy {
-      grid-column: 1/4;
-      .screen-xs-max({
-        grid-column: 1/9;
-      });
-    }
-  }
-  &.what-to-expect {
-    > .title {
-      grid-column: 1/6;
+      grid-column: 2/8;
       grid-row: 1/2;
       .screen-xs-max({
         grid-column: 1/9;
@@ -454,7 +458,78 @@ i.fa-bars, i.fa-times {
       });
     }
     > h3 {
-      grid-column: 1/6;
+      grid-column: 2/5;
+      margin: 0;
+      .screen-xs-max({
+        grid-column: 1/9;
+        grid-row: 3/4;
+      });
+    }
+    > .image {
+      grid-column: 5/8;
+      grid-row: 2/3;
+      .screen-xs-max({
+        grid-column: 1/9;
+        grid-row: 1/2;
+      });
+      background-image: url(../images/beach-clouds.jpg);
+      background-position: center right;
+    }
+    > .box {
+      grid-column: 5/8;
+      grid-row: 3/5;
+      .screen-xs-max({
+        grid-column: 1/9;
+        grid-row: 4/5;
+      });
+      > div {
+        font-size: 0.8em;
+        padding: 15px;
+        border: 1px solid #ccc;
+      }
+    }
+    > .body-copy {
+      grid-column: 2/5;
+      > h4 {
+        margin-top: 0;
+      }
+      .screen-xs-max({
+        grid-column: 1/9;
+        grid-row: 5/6;
+      });
+    }
+  }
+  &.contact {
+    > .title {
+      grid-column: 3/7;
+      .screen-xs-max({
+        grid-column: 1/9;
+      });
+    }
+    > .details {
+      grid-column: 3/7;
+      .screen-xs-max({
+        grid-column: 1/9;
+      });
+    }
+    > .body-copy {
+      grid-column: 3/7;
+      .screen-xs-max({
+        grid-column: 1/9;
+      });
+    }
+  }
+  &.what-to-expect {
+    > .title {
+      grid-column: 2/8;
+      grid-row: 1/2;
+      .screen-xs-max({
+        grid-column: 1/9;
+        grid-row: 2/3;
+      });
+    }
+    > h3 {
+      grid-column: 2/5;
       grid-row: 2/3;
       .screen-xs-max({
         grid-column: 1/9;
@@ -463,17 +538,17 @@ i.fa-bars, i.fa-times {
       margin: 0;
     }
     > .image {
-      grid-column: 6/9;
+      grid-column: 5/8;
+      grid-row: 2/4;
       .screen-xs-max({
         grid-column: 1/9;
         grid-row: 1/2;
       });
-      grid-row: 1/4;
       background-image: url(../images/towels-candles.jpg);
       background-position: bottom right;
     }
     > .body-copy {
-      grid-column: 1/6;
+      grid-column: 2/5;
       grid-row: 3/4;
       .screen-xs-max({
         grid-column: 1/9;
@@ -483,7 +558,7 @@ i.fa-bars, i.fa-times {
   }
   &.pricing-offers {
     > .title {
-      grid-column: 1/9;
+      grid-column: 2/8;
       grid-row: 1/2;
       .screen-xs-max({
         grid-column: 1/9;
@@ -491,7 +566,7 @@ i.fa-bars, i.fa-times {
       });
     }
     > .body-copy {
-      grid-column: 1/6;
+      grid-column: 2/5;
       grid-row: 2/3;
       .screen-xs-max({
         grid-column: 1/9;
@@ -499,8 +574,8 @@ i.fa-bars, i.fa-times {
       });
     }
     > .image {
-      grid-column: 6/9;
-      grid-row: 1/4;
+      grid-column: 5/8;
+      grid-row: 2/4;
       .screen-xs-max({
         grid-column: 1/9;
         grid-row: 1/2;
@@ -511,25 +586,25 @@ i.fa-bars, i.fa-times {
   }
   &.not-found {
     > .title {
-      grid-column: 1/9;
+      grid-column: 2/8;
     }
     > h3 {
-      grid-column: 1/9;
+      grid-column: 2/8;
     }
     > .body-copy {
-      grid-column: 1/9;
+      grid-column: 2/8;
     }
   }
   &.about-me {
     > .title {
-      grid-column: 1/9;
+      grid-column: 2/8;
       .screen-xs-max({
         grid-column: 1/9;
         grid-row: 2/3;
       });
     }
     > .body-copy {
-      grid-column: 1/6;
+      grid-column: 2/5;
       .screen-xs-max({
         grid-column: 1/9;
         grid-row: 3/4;
@@ -538,7 +613,7 @@ i.fa-bars, i.fa-times {
     > .images {
       display: grid;
       grid-template-columns: 1fr 3fr;
-      grid-column: 1/6;
+      grid-column: 2/8;
       grid-gap: 30px;
       .screen-xs-max({
         grid-column: 1/9;
@@ -555,7 +630,7 @@ i.fa-bars, i.fa-times {
       }
     }
     > .image {
-      grid-column: 6/9;
+      grid-column: 5/8;
       grid-row: 2/3;
       background-image: url(../images/about-me.jpg);
       background-position: bottom center;
@@ -566,7 +641,7 @@ i.fa-bars, i.fa-times {
     }
   }
   > .title {
-    grid-column: 1/9;
+    grid-column: 2/8;
     > h2 {
       margin: 0;
       font-size: 4em;
@@ -593,7 +668,7 @@ i.fa-bars, i.fa-times {
     }
   }
   > h3 {
-    grid-column: 1/9;
+    grid-column: 2/8;
   }
   .image {
     width: 100%;
@@ -609,6 +684,6 @@ i.fa-bars, i.fa-times {
     }
   }
   > .body-copy {
-    grid-column: 1/9;
+    grid-column: 2/8;
   }
 }

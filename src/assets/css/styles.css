@@ -49,6 +49,18 @@ a.link-dark:focus,
 .link.link-dark:focus {
   color: #ab735a;
 }
+button.btn {
+  color: #f3e093;
+  background-color: transparent;
+  border: 1px solid #f3e093;
+  transition: 0.3s ease-in-out;
+}
+button.btn:hover,
+button.btn:focus {
+  color: #f8edc1;
+  background-color: transparent;
+  border: 1px solid #f8edc1;
+}
 h1 {
   font-family: 'Pacifico', cursive;
   line-height: 0.7;
@@ -57,12 +69,6 @@ h1 {
 h2 {
   line-height: 1.2;
   font-size: 2em;
-}
-h2.home {
-  font-size: 5em;
-  font-weight: 300;
-  padding: 5%;
-  text-align: right;
 }
 h3 {
   line-height: 1.2;
@@ -73,6 +79,11 @@ h4 {
   font-size: 1.2em;
   font-weight: 300;
   margin: 30px 0 20px;
+}
+h5 {
+  font-size: 1.1em;
+  font-weight: 300;
+  margin: 20px 0 15px;
 }
 p {
   margin: 0 0 20px;
@@ -339,7 +350,7 @@ i.fa-times {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-auto-rows: min-content;
   grid-gap: 50px 30px;
-  padding: 30px 30px 100px;
+  padding: 9% 30px 100px;
   width: 100%;
   font-size: 1.2em;
 }
@@ -364,30 +375,41 @@ i.fa-times {
     align-self: center;
   }
 }
-.content.home > h2 {
+.content.home > .body-copy {
   grid-column: 4/9;
-  font-weight: 100;
+  text-align: right;
 }
 @media (max-width: 767px) {
-  .content.home > h2 {
+  .content.home > .body-copy {
     grid-column: 1/9;
     text-align: center;
   }
 }
+.content.home > .body-copy > h2 {
+  font-weight: 100;
+  font-size: 5em;
+  padding: 5%;
+}
 @media (max-width: 991px) {
-  .content.home > h2 {
+  .content.home > .body-copy > h2 {
     font-size: 3.3em;
   }
 }
 @media (max-width: 575px) {
-  .content.home > h2 {
+  .content.home > .body-copy > h2 {
     font-size: 2em;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  .content.home > h2 {
+  .content.home > .body-copy > h2 {
     font-size: 4.5em;
   }
+}
+.content.home > .body-copy > .link {
+  width: auto;
+  margin: 5%;
+  font-size: 1.3em;
+  text-transform: uppercase;
 }
 .content.home > .bg {
   position: fixed;
@@ -400,7 +422,7 @@ i.fa-times {
   z-index: -1;
 }
 .content.about-reflexology > .title {
-  grid-column: 1/6;
+  grid-column: 2/8;
   grid-row: 1/2;
 }
 @media (max-width: 767px) {
@@ -410,7 +432,7 @@ i.fa-times {
   }
 }
 .content.about-reflexology > h3 {
-  grid-column: 1/6;
+  grid-column: 2/5;
   grid-row: 2/3;
   margin: 0;
 }
@@ -421,8 +443,8 @@ i.fa-times {
   }
 }
 .content.about-reflexology > .image {
-  grid-column: 6/9;
-  grid-row: 1/5;
+  grid-column: 5/8;
+  grid-row: 2/5;
   background-image: url(../images/barefoot-close-up.jpg);
   background-position: bottom right;
 }
@@ -433,7 +455,7 @@ i.fa-times {
   }
 }
 .content.about-reflexology > .body-copy {
-  grid-column: 1/5;
+  grid-column: 2/5;
   grid-row: 3/4;
 }
 @media (max-width: 767px) {
@@ -446,8 +468,70 @@ i.fa-times {
   padding-left: 20px;
   margin: 20px 0;
 }
+.content.maternity {
+  grid-auto-flow: column;
+}
+.content.maternity > .title {
+  grid-column: 2/8;
+  grid-row: 1/2;
+}
+@media (max-width: 767px) {
+  .content.maternity > .title {
+    grid-column: 1/9;
+    grid-row: 2/3;
+  }
+}
+.content.maternity > h3 {
+  grid-column: 2/5;
+  margin: 0;
+}
+@media (max-width: 767px) {
+  .content.maternity > h3 {
+    grid-column: 1/9;
+    grid-row: 3/4;
+  }
+}
+.content.maternity > .image {
+  grid-column: 5/8;
+  grid-row: 2/3;
+  background-image: url(../images/beach-clouds.jpg);
+  background-position: center right;
+}
+@media (max-width: 767px) {
+  .content.maternity > .image {
+    grid-column: 1/9;
+    grid-row: 1/2;
+  }
+}
+.content.maternity > .box {
+  grid-column: 5/8;
+  grid-row: 3/5;
+}
+@media (max-width: 767px) {
+  .content.maternity > .box {
+    grid-column: 1/9;
+    grid-row: 4/5;
+  }
+}
+.content.maternity > .box > div {
+  font-size: 0.8em;
+  padding: 15px;
+  border: 1px solid #ccc;
+}
+.content.maternity > .body-copy {
+  grid-column: 2/5;
+}
+.content.maternity > .body-copy > h4 {
+  margin-top: 0;
+}
+@media (max-width: 767px) {
+  .content.maternity > .body-copy {
+    grid-column: 1/9;
+    grid-row: 5/6;
+  }
+}
 .content.contact > .title {
-  grid-column: 1/4;
+  grid-column: 3/7;
 }
 @media (max-width: 767px) {
   .content.contact > .title {
@@ -455,7 +539,7 @@ i.fa-times {
   }
 }
 .content.contact > .details {
-  grid-column: 1/4;
+  grid-column: 3/7;
 }
 @media (max-width: 767px) {
   .content.contact > .details {
@@ -463,7 +547,7 @@ i.fa-times {
   }
 }
 .content.contact > .body-copy {
-  grid-column: 1/4;
+  grid-column: 3/7;
 }
 @media (max-width: 767px) {
   .content.contact > .body-copy {
@@ -471,7 +555,7 @@ i.fa-times {
   }
 }
 .content.what-to-expect > .title {
-  grid-column: 1/6;
+  grid-column: 2/8;
   grid-row: 1/2;
 }
 @media (max-width: 767px) {
@@ -481,7 +565,7 @@ i.fa-times {
   }
 }
 .content.what-to-expect > h3 {
-  grid-column: 1/6;
+  grid-column: 2/5;
   grid-row: 2/3;
   margin: 0;
 }
@@ -492,8 +576,8 @@ i.fa-times {
   }
 }
 .content.what-to-expect > .image {
-  grid-column: 6/9;
-  grid-row: 1/4;
+  grid-column: 5/8;
+  grid-row: 2/4;
   background-image: url(../images/towels-candles.jpg);
   background-position: bottom right;
 }
@@ -504,7 +588,7 @@ i.fa-times {
   }
 }
 .content.what-to-expect > .body-copy {
-  grid-column: 1/6;
+  grid-column: 2/5;
   grid-row: 3/4;
 }
 @media (max-width: 767px) {
@@ -514,7 +598,7 @@ i.fa-times {
   }
 }
 .content.pricing-offers > .title {
-  grid-column: 1/9;
+  grid-column: 2/8;
   grid-row: 1/2;
 }
 @media (max-width: 767px) {
@@ -524,7 +608,7 @@ i.fa-times {
   }
 }
 .content.pricing-offers > .body-copy {
-  grid-column: 1/6;
+  grid-column: 2/5;
   grid-row: 2/3;
 }
 @media (max-width: 767px) {
@@ -534,8 +618,8 @@ i.fa-times {
   }
 }
 .content.pricing-offers > .image {
-  grid-column: 6/9;
-  grid-row: 1/4;
+  grid-column: 5/8;
+  grid-row: 2/4;
   background-image: url(../images/yoga.jpg);
   background-position: bottom right;
 }
@@ -546,16 +630,16 @@ i.fa-times {
   }
 }
 .content.not-found > .title {
-  grid-column: 1/9;
+  grid-column: 2/8;
 }
 .content.not-found > h3 {
-  grid-column: 1/9;
+  grid-column: 2/8;
 }
 .content.not-found > .body-copy {
-  grid-column: 1/9;
+  grid-column: 2/8;
 }
 .content.about-me > .title {
-  grid-column: 1/9;
+  grid-column: 2/8;
 }
 @media (max-width: 767px) {
   .content.about-me > .title {
@@ -564,7 +648,7 @@ i.fa-times {
   }
 }
 .content.about-me > .body-copy {
-  grid-column: 1/6;
+  grid-column: 2/5;
 }
 @media (max-width: 767px) {
   .content.about-me > .body-copy {
@@ -575,7 +659,7 @@ i.fa-times {
 .content.about-me > .images {
   display: grid;
   grid-template-columns: 1fr 3fr;
-  grid-column: 1/6;
+  grid-column: 2/8;
   grid-gap: 30px;
 }
 @media (max-width: 767px) {
@@ -594,7 +678,7 @@ i.fa-times {
   grid-column: 2/3;
 }
 .content.about-me > .image {
-  grid-column: 6/9;
+  grid-column: 5/8;
   grid-row: 2/3;
   background-image: url(../images/about-me.jpg);
   background-position: bottom center;
@@ -606,7 +690,7 @@ i.fa-times {
   }
 }
 .content > .title {
-  grid-column: 1/9;
+  grid-column: 2/8;
 }
 .content > .title > h2 {
   margin: 0;
@@ -639,7 +723,7 @@ i.fa-times {
   }
 }
 .content > h3 {
-  grid-column: 1/9;
+  grid-column: 2/8;
 }
 .content .image {
   width: 100%;
@@ -657,5 +741,5 @@ i.fa-times {
   padding-bottom: 100%;
 }
 .content > .body-copy {
-  grid-column: 1/9;
+  grid-column: 2/8;
 }
