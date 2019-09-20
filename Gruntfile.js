@@ -14,7 +14,7 @@ module.exports = function(grunt) {
     less: {
   	  production: {
   	    options: {
-  	      paths: ['www/asset/css'],
+  	      paths: ['src/assets/css'],
           strictMath: true
   	    },
   	    files: {

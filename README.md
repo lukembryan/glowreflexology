@@ -1,27 +1,35 @@
-# glow reflexology
+# Vue.js 2.0 + vue-router Prerender SPA Example
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.3.
+Demonstrates usage of Vuejs 2.0 with Vue Router and Webpack 3. Build will generate 3 static routes at the following paths:
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- `/`
+- `/about`
+- `/contact`
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+```bash
+npm install
+npm run build
+```
 
-## Running unit tests
+Now check the new `dist` directory for your prerendered static files!
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+To view the rendered files, install [http-server](https://www.npmjs.com/package/http-server) (`npm install -g http-server`) if you haven't already and run it in the dist directory.
 
-## Running end-to-end tests
+Now visit the following routes in your browser (note the trailing slash):
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+- [http://localhost:8000/](http://localhost:8000/)
+- [http://localhost:8000/about/](http://localhost:8000/about/)
+- [http://localhost:8000/contact/](http://localhost:8000/contact/)
 
-## Further help
+## Development
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+To edit the `prerender-spa-plugin` configuration, look for `new PrerenderSPAPlugin` in the plugins section of `webpack.config.js`.
+
+If you're using a router or have more than one page to prerender, edit the `routes` array under that config object.
+
+```bash
+npm install
+npm run dev
+```
