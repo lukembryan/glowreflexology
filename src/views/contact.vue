@@ -13,6 +13,55 @@
     <div class="body-copy">
       <p>To make a booking, an enquiry, or just to find out a bit more about reflexology, please feel free to get in touch by any of the methods above.</p>
       <p>I am very interested in working at <strong>festivals or corporate wellness days</strong> etc., please don’t hesitate to get in touch for a chat.</p>
+      <h3>availability</h3>
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Days</th>
+              <th>Times</th>
+              <th>Where</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mon</td>
+              <td>N/A</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>Tue</td>
+              <td>N/A</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>Wed</td>
+              <td>6:30pm - 9:00pm</td>
+              <td>Home visit</td>
+            </tr>
+            <tr>
+              <td>Thu</td>
+              <td>10:00am - 3:00pm</td>
+              <td>Mayflower Spa</td>
+            </tr>
+            <tr>
+              <td>Fri</td>
+              <td>9:30am - 2:30pm<hr>6:30pm - 9:00pm</td>
+              <td>Home visits</td>
+            </tr>
+            <tr>
+              <td>Sat</td>
+              <td>9:00am - 1:00pm</td>
+              <td>Home visits</td>
+            </tr>
+            <tr>
+              <td>Sun</td>
+              <td>N/A</td>
+              <td>-</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
 </template>
@@ -25,4 +74,9 @@ export default {
 }
 </script>
 
-<style></style>
+<style scoped lang="less">
+
+  hr {
+    margin: 5px 0;
+  }
+</style>

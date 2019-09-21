@@ -460,6 +460,9 @@ ul {
         display: block;
         text-align: right;
         font-size: 1.5em;
+        .screen-sm-max({
+          line-height: 1.7em;
+        });
         &.active, &:hover {
           border-top: 1px solid transparent;
           border-bottom: 1px solid transparent;
