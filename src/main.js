@@ -25,80 +25,74 @@ const routes = [
     metaTags: [
       { property: 'og:type', content: 'website' },
       { property: 'og:title', content: 'Mobile reflexology in Horsham and surrounding areas' },
-      { name: 'description', content: '' },
-      { property: 'og:description', content: '' },
+      { name: 'description', content: 'Find your glow. Book a treatment with a MAR, FHT and CNHC fully insured reflexologist. Pre-conception and pregnancy treatments available.' },
+      { property: 'og:description', content: 'Find your glow. Book a treatment with a MAR, FHT and CNHC fully insured reflexologist.  Pre-conception and pregnancy treatments available.' },
       { property: 'og:url', content: 'https://glowreflexology.co.uk' },
       { property: 'og:site_name', content: 'glow reflexology' },
       { property: 'og:locale', content: 'en_GB' }
     ]
   }},
   { path: '/about-reflexology', component: AboutReflexology, meta: {
-    title: 'about reflexology - glow reflexology',
+    title: 'About reflexology',
     metaTags: [
       { property: 'og:type', content: 'website' },
-      { property: 'og:title', content: 'about reflexology - glow reflexology' },
-      { name: 'description', content: '' },
-      { property: 'og:description', content: '' },
+      { property: 'og:title', content: 'About reflexology' },
+      { name: 'description', content: 'The ancient practice of reflexology was developed from the premise that there are reflexes in your feet that correspond with different parts of your body.' },
+      { property: 'og:description', content: 'The ancient practice of reflexology was developed from the premise that there are reflexes in your feet that correspond with different parts of your body.' },
       { property: 'og:url', content: 'https://glowreflexology.co.uk/about-reflexology' },
       { property: 'og:site_name', content: 'glow reflexology' },
       { property: 'og:locale', content: 'en_GB' }
     ]
   }},
   { path: '/what-to-expect', component: WhatToExpect, meta: {
-    title: 'what to expect - glow reflexology',
+    title: 'What to expect from a reflexology treatment',
     metaTags: [
       { property: 'og:type', content: 'website' },
-      { property: 'og:title', content: 'what to expect - glow reflexology' },
-      { name: 'description', content: '' },
-      { property: 'og:description', content: '' },
+      { property: 'og:title', content: 'What to expect from a reflexology treatment' },
+      { name: 'description', content: 'I operate on a mobile basis within a 10 mile radius of Horsham.' },
+      { property: 'og:description', content: 'I operate on a mobile basis within a 10 mile radius of Horsham.' },
       { property: 'og:url', content: 'https://glowreflexology.co.uk/what-to-expect' },
       { property: 'og:site_name', content: 'glow reflexology' },
       { property: 'og:locale', content: 'en_GB' }
     ]
   }},
   { path: '/maternity', component: Maternity, meta: {
-    title: 'maternity - glow reflexology',
+    title: 'Maternity reflexology',
     metaTags: [
       { property: 'og:type', content: 'website' },
-      { property: 'og:title', content: 'maternity - glow reflexology' },
-      { name: 'description', content: '' },
-      { property: 'og:description', content: '' },
+      { property: 'og:title', content: 'Maternity reflexology' },
+      { name: 'description', content: 'Maternity reflexology is an area of reflexology aimed specifically at couples during pre-conception, pregnancy and postnatal periods.' },
+      { property: 'og:description', content: 'Maternity reflexology is an area of reflexology aimed specifically at couples during pre-conception, pregnancy and postnatal periods.' },
       { property: 'og:url', content: 'https://glowreflexology.co.uk/maternity' },
       { property: 'og:site_name', content: 'glow reflexology' },
       { property: 'og:locale', content: 'en_GB' }
     ]
   }},
   { path: '/pricing-offers', component: PricingOffers, meta: {
-    title: 'pricing & offers - glow reflexology',
+    title: 'Pricing & offers',
     metaTags: [
       { property: 'og:type', content: 'website' },
-      { property: 'og:title', content: 'pricing & offers - glow reflexology' },
-      { name: 'description', content: '' },
-      { property: 'og:description', content: '' },
+      { property: 'og:title', content: 'Pricing & offers' },
+      { name: 'description', content: 'Home visit in Horsham and surrounding areas, £35' },
+      { property: 'og:description', content: 'Home visit in Horsham and surrounding areas, £35' },
       { property: 'og:url', content: 'https://glowreflexology.co.uk/pricing-offers' },
       { property: 'og:site_name', content: 'glow reflexology' },
       { property: 'og:locale', content: 'en_GB' }
     ]
   }},
   { path: '/about-me', component: AboutMe, meta: {
-    title: 'about me - glow reflexology',
+    title: 'About me',
     metaTags: [
-      { property: 'og:type', content: 'website' },
-      { property: 'og:title', content: 'about me - glow reflexology' },
-      { name: 'description', content: '' },
-      { property: 'og:description', content: '' },
-      { property: 'og:url', content: 'https://glowreflexology.co.uk/about-me' },
-      { property: 'og:site_name', content: 'glow reflexology' },
-      { property: 'og:locale', content: 'en_GB' }
+      { name: 'robots', content: 'noindex, nofollow' }
     ]
   }},
   { path: '/contact', component: Contact, meta: {
-    title: 'contact - glow reflexology',
+    title: 'Contact glow reflexology',
     metaTags: [
       { property: 'og:type', content: 'website' },
-      { property: 'og:title', content: 'contact - glow reflexology' },
-      { name: 'description', content: '' },
-      { property: 'og:description', content: '' },
+      { property: 'og:title', content: 'Contact glow reflexology' },
+      { name: 'description', content: 'To make a booking, an enquiry, or just to find out a bit more about reflexology, please feel free to get in touch.' },
+      { property: 'og:description', content: 'To make a booking, an enquiry, or just to find out a bit more about reflexology, please feel free to get in touch.' },
       { property: 'og:url', content: 'https://glowreflexology.co.uk/contact' },
       { property: 'og:site_name', content: 'glow reflexology' },
       { property: 'og:locale', content: 'en_GB' }

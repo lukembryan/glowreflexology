@@ -1,7 +1,7 @@
 <template>
   <div class="about-reflexology content">
     <div class="title">
-      <h2>about reflexology</h2>
+      <h1>about reflexology</h1>
     </div>
     <h3>The ancient practice of foot reflexology was developed from the premise that there are over 7,000 reflex points in the feet that can be mapped to different parts of the body.</h3>
     <div class="image"></div>

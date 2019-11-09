@@ -5,8 +5,12 @@
     	<span class="reflexology lato">reflexology</span>
     </div>
     <div class="body-copy">
-    	<h2 class="home lato">find your glow with reflexology</h2>
+    	<h1 class="home lato">find your glow with reflexology</h1>
     	<router-link to="/contact"><span class="link">enquire here</span></router-link>
+    </div>
+    <div class="summary">
+      <p>Operating both on a mobile basis within a 10 mile radius of Horsham and every Thursday at the Mayflower Spa in Dorking.</p>
+      <p>Member of the Federation of Holistic Therapists and Association of Reflexologists.</p>
     </div>
     <div class="bg"></div>
   </div>

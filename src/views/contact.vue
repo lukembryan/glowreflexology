@@ -1,7 +1,7 @@
 <template>
   <div class="contact content">
     <div class="title">
-      <h2>contact</h2>
+      <h1>contact</h1>
     </div>
     <div class="details">
       <div><strong>Landline</strong><span class="pull-right"><a href="tel:01403256259">01403 256259</a></span></div>

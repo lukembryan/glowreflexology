@@ -1,7 +1,7 @@
 <template>
   <div class="maternity content">
     <div class="title">
-      <h2>maternity reflexology</h2>
+      <h1>maternity reflexology</h1>
     </div>
     <h3>Maternity reflexology is an area of reflexology aimed specifically at couples during <strong>pre-conception, pregnancy and postnatal</strong> periods. Reflexology can be hugely benefitial at these times - research has shown that women who have regular reflexology treatments during pregnancy can shorten the duration of labour, and those having regular treatments may require less pain-relief during the course of delivery*.</h3>
     <div class="image"></div>

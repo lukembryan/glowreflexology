@@ -203,8 +203,7 @@ button.btn {
 }
 
 h1 {
-  font-family: 'Pacifico', cursive;
-  line-height: 0.7;
+  line-height: 1.2;
   font-size: 3em;
 }
 
@@ -544,12 +543,14 @@ i.fa-bars, i.fa-times {
     }
     > .body-copy {
       grid-column: 4/9;
+      grid-row: 1/3;
       text-align: right;
       .screen-xs-max({
         grid-column: 1/9;
+        grid-row: 2/3;
         text-align: center;
       });
-      > h2 {
+      > h1 {
         font-weight: 100;
         font-size: 5em;
         padding: 5%;
@@ -565,6 +566,18 @@ i.fa-bars, i.fa-times {
         text-transform: uppercase;
         text-shadow: #333 0px 0px 20px;
       }
+    }
+    .summary {
+      grid-row: 2/3;
+      grid-column: 1/4;
+      font-size: 1.2em;
+      text-align: left;
+      font-weight: 100;
+      .screen-xs-max({
+        grid-row: 3/4;
+        grid-column: 2/8;
+        text-align: center;
+      });
     }
     > .bg {
       position: fixed;
@@ -858,7 +871,7 @@ i.fa-bars, i.fa-times {
   }
   > .title {
     grid-column: 2/8;
-    > h2 {
+    > h1 {
       margin: 0;
       font-size: 4em;
       font-weight: 300;
