@@ -9,7 +9,7 @@
     	<router-link to="/contact"><span class="link">enquire here</span></router-link>
     </div>
     <div class="summary">
-      <p>Operating both on a mobile basis within a 10 mile radius of Horsham and every Thursday at the Mayflower Spa in Dorking.</p>
+      <p>Operating on a mobile basis within a 10 mile radius of Horsham.</p>
       <p>Member of the Federation of Holistic Therapists and Association of Reflexologists.</p>
     </div>
     <div class="bg"></div>

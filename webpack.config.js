@@ -96,7 +96,8 @@ if (process.env.NODE_ENV === 'production') {
         '/about-me',
         '/contact',
         '/data-protection-policy',
-        '/code-of-ethics'
+        '/code-of-ethics',
+        '/blog/how-to-get-more-sleep'
       ],
       renderer: new Renderer({
         inject: {

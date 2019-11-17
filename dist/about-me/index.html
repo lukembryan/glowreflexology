@@ -23,7 +23,10 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
-<link rel="shortcut icon" href="/favicon.ico"><style type="text/css">html,
+<link rel="shortcut icon" href="/favicon.ico"><style type="text/css">/* =============================================================================
+   Media queries for different screen sizes
+   ========================================================================== */
+html,
 body {
   height: 100%;
 }
@@ -227,6 +230,9 @@ header > footer {
   text-align: right;
   background-color: transparent;
 }
+header > footer.fade {
+  pointer-events: none;
+}
 header > footer:not('.home') {
   color: #332d25;
 }
@@ -248,7 +254,7 @@ header > footer a {
 }
 footer {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid--columns: 1fr 1fr;
   z-index: 2;
   position: fixed;
   bottom: 0;
@@ -318,6 +324,11 @@ ul.menu {
 @media (max-width: 991px) {
 ul.menu {
     display: none;
+}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+ul.menu {
+    font-size: 1em;
 }
 }
 ul.menu.menu-responsive {
@@ -402,6 +413,7 @@ i.fa-bars,
   padding: 9% 30px 100px;
   width: 100%;
   font-size: 1.2em;
+  z-index: 1;
 }
 @media (max-width: 575px) {
 .content {
@@ -850,7 +862,7 @@ i.fa-bars,
     font-size: 1.2em;
 }
 }
-.content > h3 {
+.content h3 {
   grid-column: 2/8;
 }
 .content .image {
@@ -873,12 +885,7 @@ i.fa-bars,
 }
 #template {
   padding-top: 90px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  overflow: scroll;
   width: 100%;
-  bottom: 0;
   background-size: cover;
   transition: all 0.3s ease-in-out;
 }
@@ -940,19 +947,80 @@ i.fa-bars,
     display: block;
 }
 }
-/* PALETTE */
-/* PALETTE */
-/* RESPONSIVE */
-/* =============================================================================
+</style><style type="text/css">hr[data-v-5be8c0dd] {
+  margin: 5px 0;
+}
+</style><style type="text/css">/* =============================================================================
    Media queries for different screen sizes
    ========================================================================== */
-/* RESPONSIVE */
-</style><style type="text/css">hr[data-v-997bc73c] {
-  margin: 5px 0;
+.content > .subtitle[data-v-3e729d35] {
+  grid-column: 2/8;
+  grid-row: 1/2;
+}
+@media (max-width: 767px) {
+.content > .subtitle[data-v-3e729d35] {
+    grid-column: 1/9;
+}
+}
+.content > .subtitle > h1[data-v-3e729d35] {
+  margin: 0;
+}
+.content > .subtitle > p[data-v-3e729d35] {
+  margin-bottom: 0;
+}
+.content > .title[data-v-3e729d35] {
+  grid-column: 2/8;
+  grid-row: 2/3;
+}
+@media (max-width: 767px) {
+.content > .title[data-v-3e729d35] {
+    grid-column: 1/9;
+    grid-row: 3/4;
+}
+}
+.content > .title > h2[data-v-3e729d35] {
+  font-size: 2.2em;
+}
+.content > h3[data-v-3e729d35] {
+  grid-column: 2/5;
+  grid-row: 3/4;
+  margin: 0;
+}
+@media (max-width: 767px) {
+.content > h3[data-v-3e729d35] {
+    grid-column: 1/9;
+    grid-row: 4/5;
+}
+}
+.content > .image[data-v-3e729d35] {
+  grid-column: 5/8;
+  grid-row: 3/5;
+  background-image: url(/sleep.jpg?80384904c2d2e9b714d0e92009dea1f4);
+  background-position: bottom left;
+}
+@media (max-width: 767px) {
+.content > .image[data-v-3e729d35] {
+    grid-column: 1/9;
+    grid-row: 2/3;
+}
+}
+.content > .body-copy[data-v-3e729d35] {
+  grid-column: 2/5;
+  grid-row: 4/5;
+}
+@media (max-width: 767px) {
+.content > .body-copy[data-v-3e729d35] {
+    grid-column: 1/9;
+    grid-row: 5/6;
+}
+}
+.content > .body-copy > ul[data-v-3e729d35] {
+  padding-left: 20px;
+  margin: 20px 0;
 }
 </style><meta name="robots" content="noindex, nofollow" data-vue-router-controlled=""></head>
 <body>
-  <div id="site-template"><!----> <header class="compact about-me"><a href="/" class="router-link-active"><div class="logo"><span class="glow pacifico">glow</span> <span class="reflexology lato">reflexology</span></div></a> <ul class="menu"><li class="link link-dark fadeOut"><a href="/about-reflexology" class="">Reflexology</a></li><li class="link link-dark fadeOut"><a href="/maternity" class="">Maternity</a></li><li class="link link-dark fadeOut"><a href="/what-to-expect" class="">What to expect</a></li><li class="link link-dark fadeOut"><a href="/pricing-offers" class="">Pricing</a></li><li class="link link-dark active fadeOut"><a href="/about-me" class="router-link-exact-active router-link-active">About me</a></li><li class="link link-dark fadeOut"><a href="/contact" class="">Contact</a></li></ul> <ul class="menu menu-responsive fade show-with-menu"><li class="link"><a href="/about-reflexology" class="">Reflexology</a></li><li class="link"><a href="/maternity" class="">Maternity</a></li><li class="link"><a href="/what-to-expect" class="">What to expect</a></li><li class="link"><a href="/pricing-offers" class="">Pricing</a></li><li class="link active"><a href="/about-me" class="router-link-exact-active router-link-active">About me</a></li><li class="link"><a href="/contact" class="">Contact</a></li></ul> <i onclick="toggleMenu(true)" class="fas fa-bars show-with-menu link-dark"></i> <i onclick="toggleMenu(false)" class="fas fa-times fade show-with-menu"></i> <div class="overlay fade show-with-menu"></div> <footer class="fade show-with-menu"><div class="social"><span class="link"><a href="https://www.facebook.com/glowwithreflexology" target="_blank"><i class="fab fa-facebook-square"></i></a></span> <span class="link"><a href="https://www.instagram.com/glowwithreflexology" target="_blank"><i class="fab fa-instagram"></i></a></span></div> <div class="links"><span class="link"><a href="/data-protection-policy" class="">data protection policy</a></span> <span class="link"><a href="/code-of-ethics" class="">code of ethics</a></span></div></footer></header> <div id="template" class="about-me"><div data-v-3c6de3ae="" class="about-me content"><div data-v-3c6de3ae="" class="title"><h1 data-v-3c6de3ae="">about me</h1></div> <div data-v-3c6de3ae="" class="body-copy"><p data-v-3c6de3ae="">After years spent working in London and Melbourne in jobs that often left me
+  <div id="site-template"><!----> <header class="compact about-me"><a href="/" class="router-link-active"><div class="logo"><span class="glow pacifico">glow</span> <span class="reflexology lato">reflexology</span></div></a> <ul class="menu"><li class="link link-dark fadeOut"><a href="/about-reflexology" class="">Reflexology</a></li><li class="link link-dark fadeOut"><a href="/maternity" class="">Maternity</a></li><li class="link link-dark fadeOut"><a href="/what-to-expect" class="">What to expect</a></li><li class="link link-dark fadeOut"><a href="/pricing-offers" class="">Pricing</a></li><li class="link link-dark active fadeOut"><a href="/about-me" class="router-link-exact-active router-link-active">About me</a></li><li class="link link-dark fadeOut"><a href="/contact" class="">Contact</a></li><li class="link link-dark fadeOut"><a href="/blog/how-to-get-more-sleep" class="">Blog</a></li></ul> <ul class="menu menu-responsive fade show-with-menu"><li class="link"><a href="/about-reflexology" class="">Reflexology</a></li><li class="link"><a href="/maternity" class="">Maternity</a></li><li class="link"><a href="/what-to-expect" class="">What to expect</a></li><li class="link"><a href="/pricing-offers" class="">Pricing</a></li><li class="link active"><a href="/about-me" class="router-link-exact-active router-link-active">About me</a></li><li class="link"><a href="/contact" class="">Contact</a></li><li class="link"><a href="/blog/how-to-get-more-sleep" class="">Blog</a></li></ul> <i onclick="toggleMenu(true)" class="fas fa-bars show-with-menu link-dark"></i> <i onclick="toggleMenu(false)" class="fas fa-times fade show-with-menu"></i> <div class="overlay fade show-with-menu"></div> <footer class="fade show-with-menu"><div class="social"><span class="link"><a href="https://www.facebook.com/glowwithreflexology" target="_blank"><i class="fab fa-facebook-square"></i></a></span> <span class="link"><a href="https://www.instagram.com/glowwithreflexology" target="_blank"><i class="fab fa-instagram"></i></a></span></div> <div class="links"><span class="link"><a href="/data-protection-policy" class="">data protection policy</a></span> <span class="link"><a href="/code-of-ethics" class="">code of ethics</a></span></div></footer></header> <div id="template" class="about-me"><div data-v-3c6de3ae="" class="about-me content"><div data-v-3c6de3ae="" class="title"><h1 data-v-3c6de3ae="">about me</h1></div> <div data-v-3c6de3ae="" class="body-copy"><p data-v-3c6de3ae="">After years spent working in London and Melbourne in jobs that often left me
       feeling frazzled and unable to sleep, and turning to reflexology in my first pregnancy -
       I was overwhelmed by the effect it had on me. I felt able to sleep much more deeply than
       I had in ages. It affected me so much that I hatched a plan. I started studying and

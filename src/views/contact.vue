@@ -41,8 +41,8 @@
             </tr>
             <tr>
               <td>Thu</td>
-              <td>10:00am - 3:00pm</td>
-              <td>Mayflower Spa</td>
+              <td>9:30am - 2:30pm<hr>6:30pm - 9:00pm</td>
+              <td>Home visits</td>
             </tr>
             <tr>
               <td>Fri</td>

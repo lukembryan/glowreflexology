@@ -23,7 +23,10 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
-<link rel="shortcut icon" href="/favicon.ico"><style type="text/css">html,
+<link rel="shortcut icon" href="/favicon.ico"><style type="text/css">/* =============================================================================
+   Media queries for different screen sizes
+   ========================================================================== */
+html,
 body {
   height: 100%;
 }
@@ -227,6 +230,9 @@ header > footer {
   text-align: right;
   background-color: transparent;
 }
+header > footer.fade {
+  pointer-events: none;
+}
 header > footer:not('.home') {
   color: #332d25;
 }
@@ -248,7 +254,7 @@ header > footer a {
 }
 footer {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid--columns: 1fr 1fr;
   z-index: 2;
   position: fixed;
   bottom: 0;
@@ -318,6 +324,11 @@ ul.menu {
 @media (max-width: 991px) {
 ul.menu {
     display: none;
+}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+ul.menu {
+    font-size: 1em;
 }
 }
 ul.menu.menu-responsive {
@@ -402,6 +413,7 @@ i.fa-bars,
   padding: 9% 30px 100px;
   width: 100%;
   font-size: 1.2em;
+  z-index: 1;
 }
 @media (max-width: 575px) {
 .content {
@@ -850,7 +862,7 @@ i.fa-bars,
     font-size: 1.2em;
 }
 }
-.content > h3 {
+.content h3 {
   grid-column: 2/8;
 }
 .content .image {
@@ -873,12 +885,7 @@ i.fa-bars,
 }
 #template {
   padding-top: 90px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  overflow: scroll;
   width: 100%;
-  bottom: 0;
   background-size: cover;
   transition: all 0.3s ease-in-out;
 }
@@ -940,19 +947,80 @@ i.fa-bars,
     display: block;
 }
 }
-/* PALETTE */
-/* PALETTE */
-/* RESPONSIVE */
-/* =============================================================================
+</style><style type="text/css">hr[data-v-5be8c0dd] {
+  margin: 5px 0;
+}
+</style><style type="text/css">/* =============================================================================
    Media queries for different screen sizes
    ========================================================================== */
-/* RESPONSIVE */
-</style><style type="text/css">hr[data-v-997bc73c] {
-  margin: 5px 0;
+.content > .subtitle[data-v-3e729d35] {
+  grid-column: 2/8;
+  grid-row: 1/2;
+}
+@media (max-width: 767px) {
+.content > .subtitle[data-v-3e729d35] {
+    grid-column: 1/9;
+}
+}
+.content > .subtitle > h1[data-v-3e729d35] {
+  margin: 0;
+}
+.content > .subtitle > p[data-v-3e729d35] {
+  margin-bottom: 0;
+}
+.content > .title[data-v-3e729d35] {
+  grid-column: 2/8;
+  grid-row: 2/3;
+}
+@media (max-width: 767px) {
+.content > .title[data-v-3e729d35] {
+    grid-column: 1/9;
+    grid-row: 3/4;
+}
+}
+.content > .title > h2[data-v-3e729d35] {
+  font-size: 2.2em;
+}
+.content > h3[data-v-3e729d35] {
+  grid-column: 2/5;
+  grid-row: 3/4;
+  margin: 0;
+}
+@media (max-width: 767px) {
+.content > h3[data-v-3e729d35] {
+    grid-column: 1/9;
+    grid-row: 4/5;
+}
+}
+.content > .image[data-v-3e729d35] {
+  grid-column: 5/8;
+  grid-row: 3/5;
+  background-image: url(/sleep.jpg?80384904c2d2e9b714d0e92009dea1f4);
+  background-position: bottom left;
+}
+@media (max-width: 767px) {
+.content > .image[data-v-3e729d35] {
+    grid-column: 1/9;
+    grid-row: 2/3;
+}
+}
+.content > .body-copy[data-v-3e729d35] {
+  grid-column: 2/5;
+  grid-row: 4/5;
+}
+@media (max-width: 767px) {
+.content > .body-copy[data-v-3e729d35] {
+    grid-column: 1/9;
+    grid-row: 5/6;
+}
+}
+.content > .body-copy > ul[data-v-3e729d35] {
+  padding-left: 20px;
+  margin: 20px 0;
 }
 </style><meta property="og:type" content="website" data-vue-router-controlled=""><meta property="og:title" content="Maternity reflexology" data-vue-router-controlled=""><meta name="description" content="Maternity reflexology is an area of reflexology aimed specifically at couples during pre-conception, pregnancy and postnatal periods." data-vue-router-controlled=""><meta property="og:description" content="Maternity reflexology is an area of reflexology aimed specifically at couples during pre-conception, pregnancy and postnatal periods." data-vue-router-controlled=""><meta property="og:url" content="https://glowreflexology.co.uk/maternity" data-vue-router-controlled=""><meta property="og:site_name" content="glow reflexology" data-vue-router-controlled=""><meta property="og:locale" content="en_GB" data-vue-router-controlled=""></head>
 <body>
-  <div id="site-template"><!----> <header class="compact maternity"><a href="/" class="router-link-active"><div class="logo"><span class="glow pacifico">glow</span> <span class="reflexology lato">reflexology</span></div></a> <ul class="menu"><li class="link link-dark fadeOut"><a href="/about-reflexology" class="">Reflexology</a></li><li class="link link-dark active fadeOut"><a href="/maternity" class="router-link-exact-active router-link-active">Maternity</a></li><li class="link link-dark fadeOut"><a href="/what-to-expect" class="">What to expect</a></li><li class="link link-dark fadeOut"><a href="/pricing-offers" class="">Pricing</a></li><li class="link link-dark fadeOut"><a href="/about-me" class="">About me</a></li><li class="link link-dark fadeOut"><a href="/contact" class="">Contact</a></li></ul> <ul class="menu menu-responsive fade show-with-menu"><li class="link"><a href="/about-reflexology" class="">Reflexology</a></li><li class="link active"><a href="/maternity" class="router-link-exact-active router-link-active">Maternity</a></li><li class="link"><a href="/what-to-expect" class="">What to expect</a></li><li class="link"><a href="/pricing-offers" class="">Pricing</a></li><li class="link"><a href="/about-me" class="">About me</a></li><li class="link"><a href="/contact" class="">Contact</a></li></ul> <i onclick="toggleMenu(true)" class="fas fa-bars show-with-menu link-dark"></i> <i onclick="toggleMenu(false)" class="fas fa-times fade show-with-menu"></i> <div class="overlay fade show-with-menu"></div> <footer class="fade show-with-menu"><div class="social"><span class="link"><a href="https://www.facebook.com/glowwithreflexology" target="_blank"><i class="fab fa-facebook-square"></i></a></span> <span class="link"><a href="https://www.instagram.com/glowwithreflexology" target="_blank"><i class="fab fa-instagram"></i></a></span></div> <div class="links"><span class="link"><a href="/data-protection-policy" class="">data protection policy</a></span> <span class="link"><a href="/code-of-ethics" class="">code of ethics</a></span></div></footer></header> <div id="template" class="maternity"><div class="maternity content"><div class="title"><h1>maternity reflexology</h1></div> <h3>Maternity reflexology is an area of reflexology aimed specifically at couples during <strong>pre-conception, pregnancy and postnatal</strong> periods. Reflexology can be hugely benefitial at these times - research has shown that women who have regular reflexology treatments during pregnancy can shorten the duration of labour, and those having regular treatments may require less pain-relief during the course of delivery*.</h3> <div class="image"></div> <div class="box"><div><p>*A research study showed reflexology in pregnancy significantly reduced pain during labour and reduced the length of the first stage (Valiani M et al - 2010 “Reviewing the effect of Reflexology on pain and outcomes of the labour of primiparous women” Iranian Journal of Nursing and Midwifery Research. 15 (Dec) p302-310)</p> <p>An earlier study showed first-time mums who received 10 reflexology treatments prior to birth had average labour times of five to six hours.  It was noted the group treated with reflexology needed far less pain relief during labour too.  (G. Motha and J. McGrath - 1992 “The effects of reflexology on labour outcome”)</p></div></div> <div class="body-copy"><h4>Pre-conception</h4> <p>Let reflexology help you get your body and mind to your optimal state for conception.</p> <p>Trying for a baby can be stressful, and it’s a time when it’s more important than ever to relax so that your body can fight off infection and ill health and you can maximise your chances of conception.</p> <p>Your reflexology sessions will last up to 1.5 hours (including consultation) and include lifestyle advice to help promote optimum body ecology for conception.</p> <p>Please get in touch to discuss a treatment plan tailored specifically to you.</p> <h4>Pregnancy</h4> <h5>1-15 weeks</h5> <p>While reflexology can do no harm, it is best to let nature take its course and reflexologists tend not to treat during this time.</p> <h5>16-36 weeks</h5> <p>A lovely relaxing treatment is recommended, with a focus on helping to ease any pregnancy aches and pains such as acidity, digestive issues, heartburn, constipation, hip and back pain, sciatica, bleeding gums, insomnia and many more. Treatments last roughly an hour (including consultation).</p> <h5>37 weeks+</h5> <p>At this point we add to the above treatment with techniques to help prime you for a natural labour. Treatments last up to 1.5 hours (including consultation).</p> <h4>Postnatal</h4> <p>Reflexology is a lovely treat in the weeks following birth, and can encourage hormonal rebalance, relax you and therefore increase the production of breast milk, boost the immune system, lift your mood and regulate your sleep patterns.  Treatments last roughly an hour (including consultation) and it is fine to have your new baby with you if that’s what you need.</p></div></div></div> <footer class="show-with-menu maternity"><div class="social"><span class="link"><a href="https://www.facebook.com/glowwithreflexology" target="_blank"><i class="fab fa-facebook-square"></i></a></span> <span class="link"><a href="https://www.instagram.com/glowwithreflexology" target="_blank"><i class="fab fa-instagram"></i></a></span></div> <div class="links"><span class="link"><a href="/data-protection-policy" class="">data protection policy</a></span> <span class="link"><a href="/code-of-ethics" class="">code of ethics</a></span></div></footer></div>
+  <div id="site-template"><!----> <header class="compact maternity"><a href="/" class="router-link-active"><div class="logo"><span class="glow pacifico">glow</span> <span class="reflexology lato">reflexology</span></div></a> <ul class="menu"><li class="link link-dark fadeOut"><a href="/about-reflexology" class="">Reflexology</a></li><li class="link link-dark active fadeOut"><a href="/maternity" class="router-link-exact-active router-link-active">Maternity</a></li><li class="link link-dark fadeOut"><a href="/what-to-expect" class="">What to expect</a></li><li class="link link-dark fadeOut"><a href="/pricing-offers" class="">Pricing</a></li><li class="link link-dark fadeOut"><a href="/about-me" class="">About me</a></li><li class="link link-dark fadeOut"><a href="/contact" class="">Contact</a></li><li class="link link-dark fadeOut"><a href="/blog/how-to-get-more-sleep" class="">Blog</a></li></ul> <ul class="menu menu-responsive fade show-with-menu"><li class="link"><a href="/about-reflexology" class="">Reflexology</a></li><li class="link active"><a href="/maternity" class="router-link-exact-active router-link-active">Maternity</a></li><li class="link"><a href="/what-to-expect" class="">What to expect</a></li><li class="link"><a href="/pricing-offers" class="">Pricing</a></li><li class="link"><a href="/about-me" class="">About me</a></li><li class="link"><a href="/contact" class="">Contact</a></li><li class="link"><a href="/blog/how-to-get-more-sleep" class="">Blog</a></li></ul> <i onclick="toggleMenu(true)" class="fas fa-bars show-with-menu link-dark"></i> <i onclick="toggleMenu(false)" class="fas fa-times fade show-with-menu"></i> <div class="overlay fade show-with-menu"></div> <footer class="fade show-with-menu"><div class="social"><span class="link"><a href="https://www.facebook.com/glowwithreflexology" target="_blank"><i class="fab fa-facebook-square"></i></a></span> <span class="link"><a href="https://www.instagram.com/glowwithreflexology" target="_blank"><i class="fab fa-instagram"></i></a></span></div> <div class="links"><span class="link"><a href="/data-protection-policy" class="">data protection policy</a></span> <span class="link"><a href="/code-of-ethics" class="">code of ethics</a></span></div></footer></header> <div id="template" class="maternity"><div class="maternity content"><div class="title"><h1>maternity reflexology</h1></div> <h3>Maternity reflexology is an area of reflexology aimed specifically at couples during <strong>pre-conception, pregnancy and postnatal</strong> periods. Reflexology can be hugely benefitial at these times - research has shown that women who have regular reflexology treatments during pregnancy can shorten the duration of labour, and those having regular treatments may require less pain-relief during the course of delivery*.</h3> <div class="image"></div> <div class="box"><div><p>*A research study showed reflexology in pregnancy significantly reduced pain during labour and reduced the length of the first stage (Valiani M et al - 2010 “Reviewing the effect of Reflexology on pain and outcomes of the labour of primiparous women” Iranian Journal of Nursing and Midwifery Research. 15 (Dec) p302-310)</p> <p>An earlier study showed first-time mums who received 10 reflexology treatments prior to birth had average labour times of five to six hours.  It was noted the group treated with reflexology needed far less pain relief during labour too.  (G. Motha and J. McGrath - 1992 “The effects of reflexology on labour outcome”)</p></div></div> <div class="body-copy"><h4>Pre-conception</h4> <p>Let reflexology help you get your body and mind to your optimal state for conception.</p> <p>Trying for a baby can be stressful, and it’s a time when it’s more important than ever to relax so that your body can fight off infection and ill health and you can maximise your chances of conception.</p> <p>Your reflexology sessions will last up to 1.5 hours (including consultation) and include lifestyle advice to help promote optimum body ecology for conception.</p> <p>Please get in touch to discuss a treatment plan tailored specifically to you.</p> <h4>Pregnancy</h4> <h5>1-15 weeks</h5> <p>While reflexology can do no harm, it is best to let nature take its course and reflexologists tend not to treat during this time.</p> <h5>16-36 weeks</h5> <p>A lovely relaxing treatment is recommended, with a focus on helping to ease any pregnancy aches and pains such as acidity, digestive issues, heartburn, constipation, hip and back pain, sciatica, bleeding gums, insomnia and many more. Treatments last roughly an hour (including consultation).</p> <h5>37 weeks+</h5> <p>At this point we add to the above treatment with techniques to help prime you for a natural labour. Treatments last up to 1.5 hours (including consultation).</p> <h4>Postnatal</h4> <p>Reflexology is a lovely treat in the weeks following birth, and can encourage hormonal rebalance, relax you and therefore increase the production of breast milk, boost the immune system, lift your mood and regulate your sleep patterns.  Treatments last roughly an hour (including consultation) and it is fine to have your new baby with you if that’s what you need.</p></div></div></div> <footer class="show-with-menu maternity"><div class="social"><span class="link"><a href="https://www.facebook.com/glowwithreflexology" target="_blank"><i class="fab fa-facebook-square"></i></a></span> <span class="link"><a href="https://www.instagram.com/glowwithreflexology" target="_blank"><i class="fab fa-instagram"></i></a></span></div> <div class="links"><span class="link"><a href="/data-protection-policy" class="">data protection policy</a></span> <span class="link"><a href="/code-of-ethics" class="">code of ethics</a></span></div></footer></div>
 <script type="text/javascript" src="/build.js"></script>
 
 </body></html>

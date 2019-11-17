@@ -114,6 +114,10 @@ export default {
           label: 'Contact',
           path: '/contact'
         },
+        {
+          label: 'Blog',
+          path: '/blog/how-to-get-more-sleep'
+        }
       ]
     }
   },
@@ -139,6 +143,8 @@ export default {
 </script>
 
 <style lang="less">
+@import 'assets/css/less/responsive.less';
+@import 'assets/css/less/palette.less';
 
 html, body {
   height: 100%;
@@ -353,6 +359,9 @@ header {
     padding: 30px;
     text-align: right;
     background-color: transparent;
+    &.fade {
+      pointer-events: none;
+    }
     &:not('.home'){
       color: @brown-grey;
     }
@@ -380,7 +389,7 @@ header {
 
 footer {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid--columns: 1fr 1fr;
   z-index: 2;
   .screen-sm-max({
     display: none;
@@ -446,6 +455,9 @@ ul {
     z-index: 1;
     .screen-sm-max({
       display: none;
+    });
+    .screen-md({
+      font-size: 1em;
     });
     &.menu-responsive {
       display: block;
@@ -528,6 +540,7 @@ i.fa-bars, i.fa-times {
   });
   width: 100%;
   font-size: 1.2em;
+  z-index: 1;
   &.home {
     padding: 0 30px 30px;
     > .logo {
@@ -896,7 +909,7 @@ i.fa-bars, i.fa-times {
       });
     }
   }
-  > h3 {
+  h3 {
     grid-column: 2/8;
   }
   .image {
@@ -919,12 +932,7 @@ i.fa-bars, i.fa-times {
 
 #template {
   padding-top: 90px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  overflow: scroll;
   width: 100%;
-  bottom: 0;
   background-size: cover;
   transition: all 0.3s ease-in-out;
   &::-webkit-scrollbar {
@@ -936,16 +944,6 @@ i.fa-bars, i.fa-times {
   &:not(.home){
     color: darken(@brown-grey, 0%);;
     background-color: #fff;
-  }
-  &.about-reflexology {
-  }
-  &.what-to-expect {
-  }
-  &.pricing-offers {
-  }
-  &.about-me {
-  }
-  &.contact {
   }
 }
 
@@ -969,147 +967,4 @@ i.fa-bars, i.fa-times {
     &:nth-child(7){ .screen-xl({ display: block; }); }
   }
 }
-
-/* PALETTE */
-@light-yellow-tint: #fff9e1;
-@light-yellow: #f8edc1;
-@light-yellow-shadow: #b7b193;
-@light-yellow-grey: #d3cac1;
-
-@yellow-tint: #fff4c5;
-@yellow: #f4e38c;
-@yellow-shadow: #b4aa6a;
-@yellow-grey: #a59b92;
-
-@orange-tint: #f9d2a2;
-@orange: #f1b669;
-@orange-shadow: #b3884e;
-@orange-grey: #7f746a;
-
-@light-brown-tint: #cc9e87;
-@light-brown: #b87d5c;
-@light-brown-shadow: #885c43;
-@light-brown-grey: #594e40;
-
-@brown-tint: #aa7b68;
-@brown: #8b5c47;
-@brown-shadow: #603f2e;
-@brown-grey: #332d25;
-/* PALETTE */
-
-/* RESPONSIVE */
-@screen-xxs: 400px;
-@screen-xxs-min: @screen-xxs;
-
-@screen-xs: 576px;
-@screen-xs-min: @screen-xs;
-
-@screen-sm: 768px;
-@screen-sm-min: @screen-sm;
-
-@screen-md: 992px;
-@screen-md-min: @screen-md;
-
-@screen-lg: 1200px;
-@screen-lg-min: @screen-lg;
-
-@screen-xl: 1600px;
-@screen-xl-min: @screen-xl;
-
-@screen-tiny-max: ( @screen-xxs-min - 1 );
-@screen-xxs-max: ( @screen-xs-min - 1 );
-@screen-xs-max: ( @screen-sm-min - 1 );
-@screen-sm-max: ( @screen-md-min - 1 );
-@screen-md-max: ( @screen-lg-min - 1 );
-@screen-lg-max: ( @screen-xl-min - 1 );
-
-/* =============================================================================
-   Media queries for different screen sizes
-   ========================================================================== */
-
-// tiny only
-.screen-tiny(@rules) {
-  @media (max-width: @screen-tiny-max) { @rules(); }
-}
-
-// xxs and larger
-.screen-xxs-min(@rules) {
-  @media (min-width: @screen-xxs-min) { @rules(); }
-}
-
-// xxs only
-.screen-xxs(@rules) {
-  @media (min-width: @screen-xxs-min) and (max-width: @screen-xxs-max) { @rules(); }
-}
-
-// xxs and smaller
-.screen-xxs-max(@rules) {
-  @media (max-width: @screen-xxs-max) { @rules(); }
-}
-
-// xs and larger
-.screen-xs-min(@rules) {
-  @media (min-width: @screen-xs-min) { @rules(); }
-}
-
-// xs only
-.screen-xs(@rules) {
-  @media (min-width: @screen-xs-min) and (max-width: @screen-xs-max) { @rules(); }
-}
-
-// xs and smaller
-.screen-xs-max(@rules) {
-  @media (max-width: @screen-xs-max) { @rules(); }
-}
-
-// sm and larger
-.screen-sm-min(@rules) {
-  @media (min-width: @screen-sm-min) { @rules(); }
-}
-
-// sm only
-.screen-sm(@rules) {
-  @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { @rules(); }
-}
-
-// sm and smaller
-.screen-sm-max(@rules) {
-  @media (max-width: @screen-sm-max) { @rules(); }
-}
-
-// md and larger
-.screen-md-min(@rules) {
-  @media (min-width: @screen-md-min) { @rules(); }
-}
-
-// md only
-.screen-md(@rules) {
-  @media (min-width: @screen-md-min) and (max-width: @screen-md-max) { @rules(); }
-}
-
-// md and smaller
-.screen-md-max(@rules) {
-  @media (max-width: @screen-md-max) { @rules(); }
-}
-
-// lg and larger
-.screen-lg-min(@rules) {
-  @media (min-width: @screen-lg-min) { @rules(); }
-}
-
-// lg only
-.screen-lg(@rules) {
-  @media (min-width: @screen-lg-min) and (max-width: @screen-lg-max) { @rules(); }
-}
-
-// lg and smaller
-.screen-lg-max(@rules) {
-  @media (max-width: @screen-lg-max) { @rules(); }
-}
-
-// xl and larger
-.screen-xl(@rules) {
-  @media (min-width: @screen-xl-min) { @rules(); }
-}
-/* RESPONSIVE */
 </style>

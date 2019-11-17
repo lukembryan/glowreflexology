@@ -13,6 +13,7 @@ import AboutMe from './views/about-me.vue';
 import Contact from './views/contact.vue';
 import DataProtectionPolicy from './views/data-protection-policy.vue';
 import CodeOfEthics from './views/code-of-ethics.vue';
+import HowToGetMoreSleep from './views/how-to-get-more-sleep.vue';
 
 Vue.use(VueRouter);
 
@@ -108,6 +109,18 @@ const routes = [
     title: 'code of ethics - glow reflexology',
     metaTags: [
       { name: 'robots', content: 'noindex, nofollow' }
+    ]
+  }},
+  { path: '/blog/how-to-get-more-sleep', component: HowToGetMoreSleep, meta: {
+    title: 'How to...get more sleep',
+    metaTags: [
+      { property: 'og:type', content: 'website' },
+      { property: 'og:title', content: 'How to...get more sleep' },
+      { name: 'description', content: 'We all know that a lack of sleep can make our days much harder than they would otherwise be.' },
+      { property: 'og:description', content: 'We all know that a lack of sleep can make our days much harder than they would otherwise be.' },
+      { property: 'og:url', content: 'https://glowreflexology.co.uk/blog/how-to-get-more-sleep' },
+      { property: 'og:site_name', content: 'glow reflexology' },
+      { property: 'og:locale', content: 'en_GB' }
     ]
   }}
 ];
