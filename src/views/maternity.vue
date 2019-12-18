@@ -1,10 +1,10 @@
 <template>
-  <div class="maternity content">
+  <div class="content">
     <div class="title">
       <h1>maternity reflexology</h1>
     </div>
     <h3>Maternity reflexology is an area of reflexology aimed specifically at couples during <strong>pre-conception, pregnancy and postnatal</strong> periods. Reflexology can be hugely benefitial at these times - research has shown that women who have regular reflexology treatments during pregnancy can shorten the duration of labour, and those having regular treatments may require less pain-relief during the course of delivery*.</h3>
-    <div class="image"></div>
+    <img class="image" src="/src/assets/images/beach-clouds.jpg" alt="Pregnancy/maternity reflexology" />
     <div class="box">
       <div>
         <p>*A research study showed reflexology in pregnancy significantly reduced pain during labour and reduced the length of the first stage (Valiani M et al - 2010 “Reviewing the effect of Reflexology on pain and outcomes of the labour of primiparous women” Iranian Journal of Nursing and Midwifery Research. 15 (Dec) p302-310)</p>
@@ -31,6 +31,8 @@
 </template>
 
 <script>
+import beachImg from '../assets/images/beach-clouds.jpg';
+
 export default {
   data () {
     return {}
@@ -38,4 +40,50 @@ export default {
 }
 </script>
 
-<style></style>
+<style scoped lang="less">
+@import '../assets/css/less/responsive.less';
+
+.content {
+  grid-auto-flow: column;
+  > .title {
+    grid-column: 2/8;
+    grid-row: 1/2;
+    .screen-xs-max({
+      grid-column: 1/9;
+      grid-row: 2/3;
+    });
+  }
+  > h3 {
+    grid-column: 2/5;
+    margin: 0;
+    .screen-xs-max({
+      grid-column: 1/9;
+      grid-row: 3/4;
+    });
+  }
+  > .image {}
+  > .box {
+    grid-column: 5/8;
+    grid-row: 3/5;
+    .screen-xs-max({
+      grid-column: 1/9;
+      grid-row: 4/5;
+    });
+    > div {
+      font-size: 0.8em;
+      padding: 15px;
+      border: 1px solid #ccc;
+    }
+  }
+  > .body-copy {
+    grid-column: 2/5;
+    > h4 {
+      margin-top: 0;
+    }
+    .screen-xs-max({
+      grid-column: 1/9;
+      grid-row: 5/6;
+    });
+  }
+}
+</style>

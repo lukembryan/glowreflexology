@@ -1,10 +1,10 @@
 <template>
-  <div class="what-to-expect content">
+  <div class="content">
     <div class="title">
       <h1>what to expect</h1>
     </div>
     <h3>I operate on a mobile basis within a 10 mile radius of Horsham.</h3>
-    <div class="image"></div>
+    <img class="image" src="/src/assets/images/towels-candles.jpg" alt="Treatment room brought to you" />
     <div class="body-copy">
       <p><strong>Relax in the comfort of your own home - Horsham and surrounding areas.</strong></p>
       <p>If you live a bit further afield, do get in touch to discuss requirements as I will travel further for a small extra charge to cover petrol and time.</p>
@@ -20,6 +20,8 @@
 </template>
 
 <script>
+import towelsCandlesImg from '../assets/images/towels-candles.jpg';
+
 export default {
   data () {
     return {}
@@ -27,4 +29,35 @@ export default {
 }
 </script>
 
-<style></style>
+<style scoped lang="less">
+@import '../assets/css/less/responsive.less';
+
+.content {
+  > .title {
+    grid-column: 2/8;
+    grid-row: 1/2;
+    .screen-xs-max({
+      grid-column: 1/9;
+      grid-row: 2/3;
+    });
+  }
+  > h3 {
+    grid-column: 2/5;
+    grid-row: 2/3;
+    .screen-xs-max({
+      grid-column: 1/9;
+      grid-row: 3/4;
+    });
+    margin: 0;
+  }
+  > .image {}
+  > .body-copy {
+    grid-column: 2/5;
+    grid-row: 3/4;
+    .screen-xs-max({
+      grid-column: 1/9;
+      grid-row: 4/5;
+    });
+  }
+}
+</style>

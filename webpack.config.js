@@ -28,7 +28,8 @@ module.exports = {
         test: /\.(png|jpg|gif|svg)$/,
         loader: 'file-loader',
         options: {
-          name: '[name].[ext]?[hash]'
+          name: '[name].[ext]?[hash]',
+          outputPath: 'src/assets/images'
         }
       },
       {
@@ -97,7 +98,9 @@ if (process.env.NODE_ENV === 'production') {
         '/contact',
         '/data-protection-policy',
         '/code-of-ethics',
-        '/blog/how-to-get-more-sleep'
+        '/blog',
+        '/blog/how-to-get-more-sleep',
+        '/blog/how-to-avoid-festive-fatigue'
       ],
       renderer: new Renderer({
         inject: {

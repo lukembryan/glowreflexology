@@ -17,7 +17,7 @@
         </div>
       </router-link>
       <ul class="menu">
-        <li class="link" v-bind:class="{'link-dark': $route.path != '/' && !showMenu, 'active': $route.path == option.path, 'fadeIn': showMenu, 'fadeOut': !showMenu}" v-for="option in options">
+        <li class="link" v-bind:class="{'link-dark': $route.path != '/' && !showMenu, 'active': $route.path.indexOf(option.path) === 0, 'fadeIn': showMenu, 'fadeOut': !showMenu}" v-for="option in options">
           <router-link :to="option.path">{{option.label}}</router-link>
         </li>
       </ul>
@@ -26,9 +26,9 @@
           <router-link :to="option.path">{{option.label}}</router-link>
         </li>
       </ul>
-      <i class="fas fa-bars show-with-menu" v-bind:class="{'link-dark': $route.path != '/'}" onclick="toggleMenu(true)"></i>
-      <i class="fas fa-times fade show-with-menu" onclick="toggleMenu(false)"></i>
-      <div class="overlay fade show-with-menu"></div>
+      <i class="fas fa-bars show-with-menu" v-bind:class="{'link-dark': $route.path != '/'}" onclick="toggleMenu()"></i>
+      <i class="fas fa-times fade show-with-menu" onclick="toggleMenu()"></i>
+      <div class="overlay fade show-with-menu" onclick="toggleMenu()"></div>
       <footer class="fade show-with-menu">
         <div class="social">
           <span class="link">
@@ -116,7 +116,7 @@ export default {
         },
         {
           label: 'Blog',
-          path: '/blog/how-to-get-more-sleep'
+          path: '/blog'
         }
       ]
     }
@@ -133,7 +133,6 @@ export default {
   watch: {
     $route (to, from){
       document.getElementById('template').scrollTo(0, 0);
-      this.showMenu = false;
     }
   },
   created: function(){
@@ -337,7 +336,7 @@ header {
         line-height: 0.85em;
         align-self: center;
         > span.reflexology {
-          line-height: 1.1em;
+          line-height: 1.15em;
           font-weight: 300;
         }
       }
@@ -541,347 +540,6 @@ i.fa-bars, i.fa-times {
   width: 100%;
   font-size: 1.2em;
   z-index: 1;
-  &.home {
-    padding: 0 30px 30px;
-    > .logo {
-      grid-column: 1/4;
-      justify-self: start;
-      align-self: start;
-      text-align: center;
-      .screen-xs-max({
-        grid-column: 1/9;
-        justify-self: center;
-        align-self: center;
-      });
-    }
-    > .body-copy {
-      grid-column: 4/9;
-      grid-row: 1/3;
-      text-align: right;
-      .screen-xs-max({
-        grid-column: 1/9;
-        grid-row: 2/3;
-        text-align: center;
-      });
-      > h1 {
-        font-weight: 100;
-        font-size: 5em;
-        padding: 5%;
-        .screen-sm-max({ font-size: 3.3em; });
-        .screen-xxs-max({ font-size: 2em; });
-        .screen-md({ font-size: 4.5em; });
-      }
-      .link {
-        width: auto;
-        margin: 5%;
-        font-size: 1.3em;
-        font-weight: 700;
-        text-transform: uppercase;
-        text-shadow: #333 0px 0px 20px;
-      }
-    }
-    .summary {
-      grid-row: 2/3;
-      grid-column: 1/4;
-      font-size: 1.2em;
-      text-align: left;
-      font-weight: 100;
-      .screen-xs-max({
-        grid-row: 3/4;
-        grid-column: 2/8;
-        text-align: center;
-      });
-    }
-    > .bg {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-image: url('assets/images/bg.jpg');
-      background-size: cover;
-      z-index: -1;
-    }
-  }
-  &.about-reflexology {
-    > .title {
-      grid-column: 2/8;
-      grid-row: 1/2;
-      .screen-xs-max({
-        grid-column: 1/9;
-        grid-row: 2/3;
-      });
-    }
-    > h3 {
-      grid-column: 2/5;
-      grid-row: 2/3;
-      margin: 0;
-      .screen-xs-max({
-        grid-column: 1/9;
-        grid-row: 3/4;
-      });
-    }
-    > .image {
-      grid-column: 5/8;
-      grid-row: 2/5;
-      .screen-xs-max({
-        grid-column: 1/9;
-        grid-row: 1/2;
-      });
-      background-image: url(assets/images/barefoot-close-up.jpg);
-      background-position: bottom right;
-    }
-    > .body-copy {
-      grid-column: 2/5;
-      grid-row: 3/4;
-      .screen-xs-max({
-        grid-column: 1/9;
-        grid-row: 4/5;
-      });
-      > ul {
-        padding-left: 20px;
-        margin: 20px 0;
-      }
-    }
-  }
-  &.maternity {
-    grid-auto-flow: column;
-    > .title {
-      grid-column: 2/8;
-      grid-row: 1/2;
-      .screen-xs-max({
-        grid-column: 1/9;
-        grid-row: 2/3;
-      });
-    }
-    > h3 {
-      grid-column: 2/5;
-      margin: 0;
-      .screen-xs-max({
-        grid-column: 1/9;
-        grid-row: 3/4;
-      });
-    }
-    > .image {
-      grid-column: 5/8;
-      grid-row: 2/3;
-      .screen-xs-max({
-        grid-column: 1/9;
-        grid-row: 1/2;
-      });
-      background-image: url(assets/images/beach-clouds.jpg);
-      background-position: center right;
-    }
-    > .box {
-      grid-column: 5/8;
-      grid-row: 3/5;
-      .screen-xs-max({
-        grid-column: 1/9;
-        grid-row: 4/5;
-      });
-      > div {
-        font-size: 0.8em;
-        padding: 15px;
-        border: 1px solid #ccc;
-      }
-    }
-    > .body-copy {
-      grid-column: 2/5;
-      > h4 {
-        margin-top: 0;
-      }
-      .screen-xs-max({
-        grid-column: 1/9;
-        grid-row: 5/6;
-      });
-    }
-  }
-  &.contact {
-    > .title {
-      grid-column: 3/7;
-      .screen-xs-max({
-        grid-column: 1/9;
-      });
-    }
-    > .details {
-      grid-column: 3/7;
-      .screen-xs-max({
-        grid-column: 1/9;
-      });
-    }
-    > .body-copy {
-      grid-column: 3/7;
-      .screen-xs-max({
-        grid-column: 1/9;
-      });
-    }
-  }
-  &.what-to-expect {
-    > .title {
-      grid-column: 2/8;
-      grid-row: 1/2;
-      .screen-xs-max({
-        grid-column: 1/9;
-        grid-row: 2/3;
-      });
-    }
-    > h3 {
-      grid-column: 2/5;
-      grid-row: 2/3;
-      .screen-xs-max({
-        grid-column: 1/9;
-        grid-row: 3/4;
-      });
-      margin: 0;
-    }
-    > .image {
-      grid-column: 5/8;
-      grid-row: 2/4;
-      .screen-xs-max({
-        grid-column: 1/9;
-        grid-row: 1/2;
-      });
-      background-image: url(assets/images/towels-candles.jpg);
-      background-position: bottom right;
-    }
-    > .body-copy {
-      grid-column: 2/5;
-      grid-row: 3/4;
-      .screen-xs-max({
-        grid-column: 1/9;
-        grid-row: 4/5;
-      });
-    }
-  }
-  &.pricing-offers {
-    > .title {
-      grid-column: 2/8;
-      grid-row: 1/2;
-      .screen-xs-max({
-        grid-column: 1/9;
-        grid-row: 2/3;
-      });
-    }
-    > .body-copy {
-      grid-column: 2/5;
-      grid-row: 2/3;
-      .screen-xs-max({
-        grid-column: 1/9;
-        grid-row: 3/4;
-      });
-    }
-    > .image {
-      grid-column: 5/8;
-      grid-row: 2/4;
-      .screen-xs-max({
-        grid-column: 1/9;
-        grid-row: 1/2;
-      });
-      background-image: url(assets/images/yoga.jpg);
-      background-position: bottom right;
-    }
-  }
-  &.not-found {
-    > .title {
-      grid-column: 2/8;
-    }
-    > h3 {
-      grid-column: 2/8;
-    }
-    > .body-copy {
-      grid-column: 2/8;
-    }
-  }
-  &.about-me {
-    > .title {
-      grid-column: 2/8;
-      .screen-xs-max({
-        grid-column: 1/9;
-        grid-row: 2/3;
-      });
-    }
-    > .body-copy {
-      grid-column: 2/5;
-      .screen-xs-max({
-        grid-column: 1/9;
-        grid-row: 3/4;
-      });
-      .em-sig {
-        background-image: url(assets/images/em-sig.png);
-        background-position: center center;
-        height: calc(46vw/3);
-        width: calc(120vw/3);
-        margin: 0 auto;
-        background-size: 80%;
-        background-repeat: no-repeat;
-        .screen-sm-min({
-          height: calc(20vw/3);
-          width: calc(51vw/3);
-        });
-      }
-    }
-    > .images {
-      display: grid;
-      grid-template-columns: 1fr 3fr;
-      grid-column: 2/8;
-      grid-gap: 30px;
-      .screen-xs-max({
-        grid-column: 1/9;
-      });
-      > .image {
-        width: 100%;
-        border: none;
-        height: calc(100vw/3);
-        background-size: 80%;
-        background-repeat: no-repeat;
-        background-position: center center;
-        &:nth-child(1){
-          grid-column: 1/2;
-          background-image: url(assets/images/excellence-in-reflexology-logo.png);
-          background-position: center center;
-          .screen-xxs-max({
-            grid-column: 1/3;
-          });
-          .screen-sm-min({
-            height: calc(51vw/3);
-          });
-          .screen-xs-max({
-            height: calc(65vw/3);
-          });
-          .screen-xxs-max({
-            width: calc(100vw/3);
-            height: calc(100vw/3);
-            margin: 0 auto;
-            grid-column: 1/3;
-          });
-        }
-        &:nth-child(2){
-          grid-column: 2/3;
-          background-image: url(assets/images/fht_psa_logo_member.jpg);
-          .screen-sm-min({
-            height: calc(50vw/3);
-          });
-          .screen-xs-max({
-            height: calc(70vw/3);
-          });
-          .screen-xxs-max({
-            height: calc(90vw/3);
-            grid-column: 1/3;
-          });
-        }
-      }
-    }
-    > .image {
-      grid-column: 5/8;
-      grid-row: 2/3;
-      background-image: url(assets/images/about-me.jpg);
-      background-position: bottom center;
-      .screen-xs-max({
-        grid-column: 1/9;
-        grid-row: 1/2;
-      });
-    }
-  }
   > .title {
     grid-column: 2/8;
     > h1 {
@@ -912,13 +570,24 @@ i.fa-bars, i.fa-times {
   h3 {
     grid-column: 2/8;
   }
-  .image {
+  > .image {
     width: 100%;
-    height: calc(100vw/3);
+    object-fit: cover;
+    object-position: center center;
+    grid-column: 5/8;
+    grid-row: 2/4;
+    height: 50vh;
     .screen-xs-max({
-      height: calc(150vw/3);
+      grid-column: 1/9;
+      grid-row: 1/2;
+      height: 40vh;
     });
-    background-size: cover;
+    .screen-xxs-max({
+      height: 35vh;
+    });
+    .screen-tiny({
+      height: 30vh;
+    });
     &:after {
       content: "";
       display: block;

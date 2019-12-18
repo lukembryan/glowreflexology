@@ -1,5 +1,5 @@
 <template>
-  <div class="contact content">
+  <div class="content">
     <div class="title">
       <h1>contact</h1>
     </div>
@@ -75,8 +75,29 @@ export default {
 </script>
 
 <style scoped lang="less">
+@import '../assets/css/less/responsive.less';
 
+.content {
+  > .title {
+    grid-column: 3/7;
+    .screen-xs-max({
+      grid-column: 1/9;
+    });
+  }
+  > .details {
+    grid-column: 3/7;
+    .screen-xs-max({
+      grid-column: 1/9;
+    });
+  }
+  > .body-copy {
+    grid-column: 3/7;
+    .screen-xs-max({
+      grid-column: 1/9;
+    });
+  }
   hr {
     margin: 5px 0;
   }
+}
 </style>

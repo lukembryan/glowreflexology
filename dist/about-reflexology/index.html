@@ -209,7 +209,7 @@ header.compact > a > .logo {
 }
 }
 header.compact > a > .logo > span.reflexology {
-  line-height: 1.1em;
+  line-height: 1.15em;
   font-weight: 300;
 }
 header.compact i.fa-bars,
@@ -420,415 +420,6 @@ i.fa-bars,
     padding: 30px;
 }
 }
-.content.home {
-  padding: 0 30px 30px;
-}
-.content.home > .logo {
-  grid-column: 1/4;
-  justify-self: start;
-  align-self: start;
-  text-align: center;
-}
-@media (max-width: 767px) {
-.content.home > .logo {
-    grid-column: 1/9;
-    justify-self: center;
-    align-self: center;
-}
-}
-.content.home > .body-copy {
-  grid-column: 4/9;
-  grid-row: 1/3;
-  text-align: right;
-}
-@media (max-width: 767px) {
-.content.home > .body-copy {
-    grid-column: 1/9;
-    grid-row: 2/3;
-    text-align: center;
-}
-}
-.content.home > .body-copy > h1 {
-  font-weight: 100;
-  font-size: 5em;
-  padding: 5%;
-}
-@media (max-width: 991px) {
-.content.home > .body-copy > h1 {
-    font-size: 3.3em;
-}
-}
-@media (max-width: 575px) {
-.content.home > .body-copy > h1 {
-    font-size: 2em;
-}
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-.content.home > .body-copy > h1 {
-    font-size: 4.5em;
-}
-}
-.content.home > .body-copy .link {
-  width: auto;
-  margin: 5%;
-  font-size: 1.3em;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-shadow: #333 0px 0px 20px;
-}
-.content.home .summary {
-  grid-row: 2/3;
-  grid-column: 1/4;
-  font-size: 1.2em;
-  text-align: left;
-  font-weight: 100;
-}
-@media (max-width: 767px) {
-.content.home .summary {
-    grid-row: 3/4;
-    grid-column: 2/8;
-    text-align: center;
-}
-}
-.content.home > .bg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url(/bg.jpg?b23a4d43778e5add326a7006b4242618);
-  background-size: cover;
-  z-index: -1;
-}
-.content.about-reflexology > .title {
-  grid-column: 2/8;
-  grid-row: 1/2;
-}
-@media (max-width: 767px) {
-.content.about-reflexology > .title {
-    grid-column: 1/9;
-    grid-row: 2/3;
-}
-}
-.content.about-reflexology > h3 {
-  grid-column: 2/5;
-  grid-row: 2/3;
-  margin: 0;
-}
-@media (max-width: 767px) {
-.content.about-reflexology > h3 {
-    grid-column: 1/9;
-    grid-row: 3/4;
-}
-}
-.content.about-reflexology > .image {
-  grid-column: 5/8;
-  grid-row: 2/5;
-  background-image: url(/barefoot-close-up.jpg?ab4a2ed0b12a038a61770370bb998506);
-  background-position: bottom right;
-}
-@media (max-width: 767px) {
-.content.about-reflexology > .image {
-    grid-column: 1/9;
-    grid-row: 1/2;
-}
-}
-.content.about-reflexology > .body-copy {
-  grid-column: 2/5;
-  grid-row: 3/4;
-}
-@media (max-width: 767px) {
-.content.about-reflexology > .body-copy {
-    grid-column: 1/9;
-    grid-row: 4/5;
-}
-}
-.content.about-reflexology > .body-copy > ul {
-  padding-left: 20px;
-  margin: 20px 0;
-}
-.content.maternity {
-  grid-auto-flow: column;
-}
-.content.maternity > .title {
-  grid-column: 2/8;
-  grid-row: 1/2;
-}
-@media (max-width: 767px) {
-.content.maternity > .title {
-    grid-column: 1/9;
-    grid-row: 2/3;
-}
-}
-.content.maternity > h3 {
-  grid-column: 2/5;
-  margin: 0;
-}
-@media (max-width: 767px) {
-.content.maternity > h3 {
-    grid-column: 1/9;
-    grid-row: 3/4;
-}
-}
-.content.maternity > .image {
-  grid-column: 5/8;
-  grid-row: 2/3;
-  background-image: url(/beach-clouds.jpg?54b8df22b1399b95cee697851be8e5b1);
-  background-position: center right;
-}
-@media (max-width: 767px) {
-.content.maternity > .image {
-    grid-column: 1/9;
-    grid-row: 1/2;
-}
-}
-.content.maternity > .box {
-  grid-column: 5/8;
-  grid-row: 3/5;
-}
-@media (max-width: 767px) {
-.content.maternity > .box {
-    grid-column: 1/9;
-    grid-row: 4/5;
-}
-}
-.content.maternity > .box > div {
-  font-size: 0.8em;
-  padding: 15px;
-  border: 1px solid #ccc;
-}
-.content.maternity > .body-copy {
-  grid-column: 2/5;
-}
-.content.maternity > .body-copy > h4 {
-  margin-top: 0;
-}
-@media (max-width: 767px) {
-.content.maternity > .body-copy {
-    grid-column: 1/9;
-    grid-row: 5/6;
-}
-}
-.content.contact > .title {
-  grid-column: 3/7;
-}
-@media (max-width: 767px) {
-.content.contact > .title {
-    grid-column: 1/9;
-}
-}
-.content.contact > .details {
-  grid-column: 3/7;
-}
-@media (max-width: 767px) {
-.content.contact > .details {
-    grid-column: 1/9;
-}
-}
-.content.contact > .body-copy {
-  grid-column: 3/7;
-}
-@media (max-width: 767px) {
-.content.contact > .body-copy {
-    grid-column: 1/9;
-}
-}
-.content.what-to-expect > .title {
-  grid-column: 2/8;
-  grid-row: 1/2;
-}
-@media (max-width: 767px) {
-.content.what-to-expect > .title {
-    grid-column: 1/9;
-    grid-row: 2/3;
-}
-}
-.content.what-to-expect > h3 {
-  grid-column: 2/5;
-  grid-row: 2/3;
-  margin: 0;
-}
-@media (max-width: 767px) {
-.content.what-to-expect > h3 {
-    grid-column: 1/9;
-    grid-row: 3/4;
-}
-}
-.content.what-to-expect > .image {
-  grid-column: 5/8;
-  grid-row: 2/4;
-  background-image: url(/towels-candles.jpg?0a2b020346979ee62b3e0c82408a3066);
-  background-position: bottom right;
-}
-@media (max-width: 767px) {
-.content.what-to-expect > .image {
-    grid-column: 1/9;
-    grid-row: 1/2;
-}
-}
-.content.what-to-expect > .body-copy {
-  grid-column: 2/5;
-  grid-row: 3/4;
-}
-@media (max-width: 767px) {
-.content.what-to-expect > .body-copy {
-    grid-column: 1/9;
-    grid-row: 4/5;
-}
-}
-.content.pricing-offers > .title {
-  grid-column: 2/8;
-  grid-row: 1/2;
-}
-@media (max-width: 767px) {
-.content.pricing-offers > .title {
-    grid-column: 1/9;
-    grid-row: 2/3;
-}
-}
-.content.pricing-offers > .body-copy {
-  grid-column: 2/5;
-  grid-row: 2/3;
-}
-@media (max-width: 767px) {
-.content.pricing-offers > .body-copy {
-    grid-column: 1/9;
-    grid-row: 3/4;
-}
-}
-.content.pricing-offers > .image {
-  grid-column: 5/8;
-  grid-row: 2/4;
-  background-image: url(/yoga.jpg?43f38cc66e72df9362e34cc078959dab);
-  background-position: bottom right;
-}
-@media (max-width: 767px) {
-.content.pricing-offers > .image {
-    grid-column: 1/9;
-    grid-row: 1/2;
-}
-}
-.content.not-found > .title {
-  grid-column: 2/8;
-}
-.content.not-found > h3 {
-  grid-column: 2/8;
-}
-.content.not-found > .body-copy {
-  grid-column: 2/8;
-}
-.content.about-me > .title {
-  grid-column: 2/8;
-}
-@media (max-width: 767px) {
-.content.about-me > .title {
-    grid-column: 1/9;
-    grid-row: 2/3;
-}
-}
-.content.about-me > .body-copy {
-  grid-column: 2/5;
-}
-@media (max-width: 767px) {
-.content.about-me > .body-copy {
-    grid-column: 1/9;
-    grid-row: 3/4;
-}
-}
-.content.about-me > .body-copy .em-sig {
-  background-image: url(/em-sig.png?7c3f48b7323acebcde2876fc9f41ecb3);
-  background-position: center center;
-  height: calc(46vw/3);
-  width: calc(120vw/3);
-  margin: 0 auto;
-  background-size: 80%;
-  background-repeat: no-repeat;
-}
-@media (min-width: 768px) {
-.content.about-me > .body-copy .em-sig {
-    height: calc(20vw/3);
-    width: calc(51vw/3);
-}
-}
-.content.about-me > .images {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  grid-column: 2/8;
-  grid-gap: 30px;
-}
-@media (max-width: 767px) {
-.content.about-me > .images {
-    grid-column: 1/9;
-}
-}
-.content.about-me > .images > .image {
-  width: 100%;
-  border: none;
-  height: calc(100vw/3);
-  background-size: 80%;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-.content.about-me > .images > .image:nth-child(1) {
-  grid-column: 1/2;
-  background-image: url(/excellence-in-reflexology-logo.png?5fc36c500d0f9e9996f0590316a1ca17);
-  background-position: center center;
-}
-@media (max-width: 575px) {
-.content.about-me > .images > .image:nth-child(1) {
-    grid-column: 1/3;
-}
-}
-@media (min-width: 768px) {
-.content.about-me > .images > .image:nth-child(1) {
-    height: calc(51vw/3);
-}
-}
-@media (max-width: 767px) {
-.content.about-me > .images > .image:nth-child(1) {
-    height: calc(65vw/3);
-}
-}
-@media (max-width: 575px) {
-.content.about-me > .images > .image:nth-child(1) {
-    width: calc(100vw/3);
-    height: calc(100vw/3);
-    margin: 0 auto;
-    grid-column: 1/3;
-}
-}
-.content.about-me > .images > .image:nth-child(2) {
-  grid-column: 2/3;
-  background-image: url(/fht_psa_logo_member.jpg?d5365e88dcfbceec540837798af283f8);
-}
-@media (min-width: 768px) {
-.content.about-me > .images > .image:nth-child(2) {
-    height: calc(50vw/3);
-}
-}
-@media (max-width: 767px) {
-.content.about-me > .images > .image:nth-child(2) {
-    height: calc(70vw/3);
-}
-}
-@media (max-width: 575px) {
-.content.about-me > .images > .image:nth-child(2) {
-    height: calc(90vw/3);
-    grid-column: 1/3;
-}
-}
-.content.about-me > .image {
-  grid-column: 5/8;
-  grid-row: 2/3;
-  background-image: url(/about-me.jpg?505339099680f768d6e7fd2bcf5e7726);
-  background-position: bottom center;
-}
-@media (max-width: 767px) {
-.content.about-me > .image {
-    grid-column: 1/9;
-    grid-row: 1/2;
-}
-}
 .content > .title {
   grid-column: 2/8;
 }
@@ -865,17 +456,32 @@ i.fa-bars,
 .content h3 {
   grid-column: 2/8;
 }
-.content .image {
+.content > .image {
   width: 100%;
-  height: calc(100vw/3);
-  background-size: cover;
+  object-fit: cover;
+  object-position: center center;
+  grid-column: 5/8;
+  grid-row: 2/4;
+  height: 50vh;
 }
 @media (max-width: 767px) {
-.content .image {
-    height: calc(150vw/3);
+.content > .image {
+    grid-column: 1/9;
+    grid-row: 1/2;
+    height: 40vh;
 }
 }
-.content .image:after {
+@media (max-width: 575px) {
+.content > .image {
+    height: 35vh;
+}
+}
+@media (max-width: 399px) {
+.content > .image {
+    height: 30vh;
+}
+}
+.content > .image:after {
   content: "";
   display: block;
   padding-bottom: 100%;
@@ -947,80 +553,549 @@ i.fa-bars,
     display: block;
 }
 }
-</style><style type="text/css">hr[data-v-5be8c0dd] {
+</style><style type="text/css">/* =============================================================================
+   Media queries for different screen sizes
+   ========================================================================== */
+.content[data-v-2992b5ca] {
+  padding: 0 30px 30px;
+}
+.content > .logo[data-v-2992b5ca] {
+  grid-column: 1/4;
+  justify-self: start;
+  align-self: start;
+  text-align: center;
+  cursor: default;
+}
+@media (max-width: 767px) {
+.content > .logo[data-v-2992b5ca] {
+    grid-column: 1/9;
+    justify-self: center;
+    align-self: center;
+}
+}
+.content > .body-copy[data-v-2992b5ca] {
+  grid-column: 4/9;
+  grid-row: 1/3;
+  text-align: right;
+}
+@media (max-width: 767px) {
+.content > .body-copy[data-v-2992b5ca] {
+    grid-column: 1/9;
+    grid-row: 2/3;
+    text-align: center;
+}
+}
+.content > .body-copy > h1[data-v-2992b5ca] {
+  font-weight: 100;
+  font-size: 5em;
+  padding: 5%;
+}
+@media (max-width: 991px) {
+.content > .body-copy > h1[data-v-2992b5ca] {
+    font-size: 3.3em;
+}
+}
+@media (max-width: 575px) {
+.content > .body-copy > h1[data-v-2992b5ca] {
+    font-size: 2em;
+}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+.content > .body-copy > h1[data-v-2992b5ca] {
+    font-size: 4.5em;
+}
+}
+.content > .body-copy .link[data-v-2992b5ca] {
+  width: auto;
+  margin: 5%;
+  font-size: 1.3em;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: #333 0px 0px 20px;
+}
+.content .summary[data-v-2992b5ca] {
+  grid-row: 2/3;
+  grid-column: 1/4;
+  font-size: 1.2em;
+  text-align: left;
+  font-weight: 100;
+}
+@media (max-width: 767px) {
+.content .summary[data-v-2992b5ca] {
+    grid-row: 3/4;
+    grid-column: 2/8;
+    text-align: center;
+}
+}
+.content > .bg[data-v-2992b5ca] {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/src/assets/images/bg.jpg?b23a4d43778e5add326a7006b4242618);
+  background-size: cover;
+  z-index: -1;
+}
+</style><style type="text/css">/* =============================================================================
+   Media queries for different screen sizes
+   ========================================================================== */
+.content > .title[data-v-55b19354] {
+  grid-column: 2/8;
+  grid-row: 1/2;
+}
+@media (max-width: 767px) {
+.content > .title[data-v-55b19354] {
+    grid-column: 1/9;
+    grid-row: 2/3;
+}
+}
+.content > h3[data-v-55b19354] {
+  grid-column: 2/5;
+  grid-row: 2/3;
+  margin: 0;
+}
+@media (max-width: 767px) {
+.content > h3[data-v-55b19354] {
+    grid-column: 1/9;
+    grid-row: 3/4;
+}
+}
+.content > .image[data-v-55b19354] {
+  object-position: left bottom;
+}
+.content > .body-copy[data-v-55b19354] {
+  grid-column: 2/5;
+  grid-row: 3/4;
+}
+@media (max-width: 767px) {
+.content > .body-copy[data-v-55b19354] {
+    grid-column: 1/9;
+    grid-row: 4/5;
+}
+}
+.content > .body-copy > ul[data-v-55b19354] {
+  padding-left: 20px;
+  margin: 20px 0;
+}
+</style><style type="text/css">/* =============================================================================
+   Media queries for different screen sizes
+   ========================================================================== */
+.content > .title[data-v-c587e576] {
+  grid-column: 2/8;
+  grid-row: 1/2;
+}
+@media (max-width: 767px) {
+.content > .title[data-v-c587e576] {
+    grid-column: 1/9;
+    grid-row: 2/3;
+}
+}
+.content > h3[data-v-c587e576] {
+  grid-column: 2/5;
+  grid-row: 2/3;
+  margin: 0;
+}
+@media (max-width: 767px) {
+.content > h3[data-v-c587e576] {
+    grid-column: 1/9;
+    grid-row: 3/4;
+}
+}
+.content > .body-copy[data-v-c587e576] {
+  grid-column: 2/5;
+  grid-row: 3/4;
+}
+@media (max-width: 767px) {
+.content > .body-copy[data-v-c587e576] {
+    grid-column: 1/9;
+    grid-row: 4/5;
+}
+}
+</style><style type="text/css">/* =============================================================================
+   Media queries for different screen sizes
+   ========================================================================== */
+.content[data-v-7620aec8] {
+  grid-auto-flow: column;
+}
+.content > .title[data-v-7620aec8] {
+  grid-column: 2/8;
+  grid-row: 1/2;
+}
+@media (max-width: 767px) {
+.content > .title[data-v-7620aec8] {
+    grid-column: 1/9;
+    grid-row: 2/3;
+}
+}
+.content > h3[data-v-7620aec8] {
+  grid-column: 2/5;
+  margin: 0;
+}
+@media (max-width: 767px) {
+.content > h3[data-v-7620aec8] {
+    grid-column: 1/9;
+    grid-row: 3/4;
+}
+}
+.content > .box[data-v-7620aec8] {
+  grid-column: 5/8;
+  grid-row: 3/5;
+}
+@media (max-width: 767px) {
+.content > .box[data-v-7620aec8] {
+    grid-column: 1/9;
+    grid-row: 4/5;
+}
+}
+.content > .box > div[data-v-7620aec8] {
+  font-size: 0.8em;
+  padding: 15px;
+  border: 1px solid #ccc;
+}
+.content > .body-copy[data-v-7620aec8] {
+  grid-column: 2/5;
+}
+.content > .body-copy > h4[data-v-7620aec8] {
+  margin-top: 0;
+}
+@media (max-width: 767px) {
+.content > .body-copy[data-v-7620aec8] {
+    grid-column: 1/9;
+    grid-row: 5/6;
+}
+}
+</style><style type="text/css">/* =============================================================================
+   Media queries for different screen sizes
+   ========================================================================== */
+.content > .title[data-v-3bcd6508] {
+  grid-column: 2/8;
+  grid-row: 1/2;
+}
+@media (max-width: 767px) {
+.content > .title[data-v-3bcd6508] {
+    grid-column: 1/9;
+    grid-row: 2/3;
+}
+}
+.content > .body-copy[data-v-3bcd6508] {
+  grid-column: 2/5;
+  grid-row: 2/3;
+}
+@media (max-width: 767px) {
+.content > .body-copy[data-v-3bcd6508] {
+    grid-column: 1/9;
+    grid-row: 3/4;
+}
+}
+</style><style type="text/css">/* =============================================================================
+   Media queries for different screen sizes
+   ========================================================================== */
+.content > .title[data-v-7705a96c] {
+  grid-column: 2/8;
+}
+@media (max-width: 767px) {
+.content > .title[data-v-7705a96c] {
+    grid-column: 1/9;
+    grid-row: 2/3;
+}
+}
+.content > .body-copy[data-v-7705a96c] {
+  grid-column: 2/5;
+}
+@media (max-width: 767px) {
+.content > .body-copy[data-v-7705a96c] {
+    grid-column: 1/9;
+    grid-row: 3/4;
+}
+}
+.content > .body-copy .em-sig[data-v-7705a96c] {
+  height: calc(46vw/3);
+  width: calc(120vw/3);
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+.content > .body-copy .em-sig[data-v-7705a96c] {
+    height: calc(20vw/3);
+    width: calc(51vw/3);
+}
+}
+.content > .images[data-v-7705a96c] {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-column: 2/8;
+  grid-gap: 30px;
+}
+@media (max-width: 767px) {
+.content > .images[data-v-7705a96c] {
+    grid-column: 1/9;
+}
+}
+.content > .images > .image[data-v-7705a96c] {
+  width: 100%;
+  border: none;
+  height: calc(100vw/3);
+}
+.content > .images > .image[data-v-7705a96c]:nth-child(1) {
+  grid-column: 1/2;
+}
+@media (max-width: 575px) {
+.content > .images > .image[data-v-7705a96c]:nth-child(1) {
+    grid-column: 1/3;
+}
+}
+@media (min-width: 768px) {
+.content > .images > .image[data-v-7705a96c]:nth-child(1) {
+    height: calc(51vw/3);
+}
+}
+@media (max-width: 767px) {
+.content > .images > .image[data-v-7705a96c]:nth-child(1) {
+    height: calc(65vw/3);
+}
+}
+@media (max-width: 575px) {
+.content > .images > .image[data-v-7705a96c]:nth-child(1) {
+    width: calc(100vw/3);
+    height: calc(100vw/3);
+    margin: 0 auto;
+    grid-column: 1/3;
+}
+}
+.content > .images > .image[data-v-7705a96c]:nth-child(2) {
+  grid-column: 2/3;
+}
+@media (min-width: 768px) {
+.content > .images > .image[data-v-7705a96c]:nth-child(2) {
+    height: calc(50vw/3);
+}
+}
+@media (max-width: 767px) {
+.content > .images > .image[data-v-7705a96c]:nth-child(2) {
+    height: calc(70vw/3);
+}
+}
+@media (max-width: 575px) {
+.content > .images > .image[data-v-7705a96c]:nth-child(2) {
+    height: calc(90vw/3);
+    grid-column: 1/3;
+}
+}
+</style><style type="text/css">/* =============================================================================
+   Media queries for different screen sizes
+   ========================================================================== */
+.content > .title[data-v-7591490e] {
+  grid-column: 3/7;
+}
+@media (max-width: 767px) {
+.content > .title[data-v-7591490e] {
+    grid-column: 1/9;
+}
+}
+.content > .details[data-v-7591490e] {
+  grid-column: 3/7;
+}
+@media (max-width: 767px) {
+.content > .details[data-v-7591490e] {
+    grid-column: 1/9;
+}
+}
+.content > .body-copy[data-v-7591490e] {
+  grid-column: 3/7;
+}
+@media (max-width: 767px) {
+.content > .body-copy[data-v-7591490e] {
+    grid-column: 1/9;
+}
+}
+.content hr[data-v-7591490e] {
   margin: 5px 0;
 }
 </style><style type="text/css">/* =============================================================================
    Media queries for different screen sizes
    ========================================================================== */
-.content > .subtitle[data-v-3e729d35] {
+.content > .title[data-v-cc591168] {
+  grid-column: 2/8;
+}
+@media (max-width: 767px) {
+.content > .title[data-v-cc591168] {
+    grid-column: 1/9;
+}
+}
+.content > .body-copy[data-v-cc591168] {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  grid-column: 2/8;
+}
+@media (max-width: 767px) {
+.content > .body-copy[data-v-cc591168] {
+    grid-template-columns: 100%;
+    grid-column: 1/9;
+}
+}
+.content > .body-copy > .post[data-v-cc591168] {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  background-color: #ccc;
+  background-size: cover;
+}
+.content > .body-copy > .post > .post-title[data-v-cc591168] {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  text-align: center;
+  color: #fff;
+  padding: 8px 15px 10px;
+  font-size: 1.2em;
+  background-color: #000000aa;
+  line-height: 1.2;
+}
+.content > .body-copy > .post > .date[data-v-cc591168] {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #fff;
+  padding: 6px 10px 8px;
+  font-size: 0.8em;
+  background-color: #00000080;
+  line-height: 1;
+}
+</style><style type="text/css">/* =============================================================================
+   Media queries for different screen sizes
+   ========================================================================== */
+.content > .subtitle[data-v-5c2d6cb8] {
   grid-column: 2/8;
   grid-row: 1/2;
 }
 @media (max-width: 767px) {
-.content > .subtitle[data-v-3e729d35] {
+.content > .subtitle[data-v-5c2d6cb8] {
     grid-column: 1/9;
 }
 }
-.content > .subtitle > h1[data-v-3e729d35] {
+.content > .subtitle > h1[data-v-5c2d6cb8] {
   margin: 0;
 }
-.content > .subtitle > p[data-v-3e729d35] {
+.content > .subtitle > p[data-v-5c2d6cb8] {
   margin-bottom: 0;
 }
-.content > .title[data-v-3e729d35] {
+.content > .title[data-v-5c2d6cb8] {
   grid-column: 2/8;
   grid-row: 2/3;
 }
 @media (max-width: 767px) {
-.content > .title[data-v-3e729d35] {
+.content > .title[data-v-5c2d6cb8] {
     grid-column: 1/9;
     grid-row: 3/4;
 }
 }
-.content > .title > h2[data-v-3e729d35] {
+.content > .title > h2[data-v-5c2d6cb8] {
   font-size: 2.2em;
 }
-.content > h3[data-v-3e729d35] {
+.content > h3[data-v-5c2d6cb8] {
   grid-column: 2/5;
   grid-row: 3/4;
   margin: 0;
 }
 @media (max-width: 767px) {
-.content > h3[data-v-3e729d35] {
+.content > h3[data-v-5c2d6cb8] {
     grid-column: 1/9;
     grid-row: 4/5;
 }
 }
-.content > .image[data-v-3e729d35] {
-  grid-column: 5/8;
+.content > .image[data-v-5c2d6cb8] {
   grid-row: 3/5;
-  background-image: url(/sleep.jpg?80384904c2d2e9b714d0e92009dea1f4);
-  background-position: bottom left;
+  object-position: left bottom;
 }
 @media (max-width: 767px) {
-.content > .image[data-v-3e729d35] {
-    grid-column: 1/9;
+.content > .image[data-v-5c2d6cb8] {
     grid-row: 2/3;
 }
 }
-.content > .body-copy[data-v-3e729d35] {
+.content > .body-copy[data-v-5c2d6cb8] {
   grid-column: 2/5;
   grid-row: 4/5;
 }
 @media (max-width: 767px) {
-.content > .body-copy[data-v-3e729d35] {
+.content > .body-copy[data-v-5c2d6cb8] {
     grid-column: 1/9;
     grid-row: 5/6;
 }
 }
-.content > .body-copy > ul[data-v-3e729d35] {
+.content > .body-copy > ul[data-v-5c2d6cb8] {
+  padding-left: 20px;
+  margin: 20px 0;
+}
+</style><style type="text/css">/* =============================================================================
+   Media queries for different screen sizes
+   ========================================================================== */
+.content > .subtitle[data-v-30ddd532] {
+  grid-column: 2/8;
+  grid-row: 1/2;
+}
+@media (max-width: 767px) {
+.content > .subtitle[data-v-30ddd532] {
+    grid-column: 1/9;
+}
+}
+.content > .subtitle > h1[data-v-30ddd532] {
+  margin: 0;
+}
+.content > .subtitle > p[data-v-30ddd532] {
+  margin-bottom: 0;
+}
+.content > .title[data-v-30ddd532] {
+  grid-column: 2/8;
+  grid-row: 2/3;
+}
+@media (max-width: 767px) {
+.content > .title[data-v-30ddd532] {
+    grid-column: 1/9;
+    grid-row: 3/4;
+}
+}
+.content > .title > h2[data-v-30ddd532] {
+  font-size: 2.2em;
+}
+.content > h3[data-v-30ddd532] {
+  grid-column: 2/5;
+  grid-row: 3/4;
+  margin: 0;
+}
+@media (max-width: 767px) {
+.content > h3[data-v-30ddd532] {
+    grid-column: 1/9;
+    grid-row: 4/5;
+}
+}
+.content > .image[data-v-30ddd532] {
+  grid-row: 3/5;
+  object-position: left top;
+}
+@media (max-width: 767px) {
+.content > .image[data-v-30ddd532] {
+    grid-row: 2/3;
+}
+}
+.content > .body-copy[data-v-30ddd532] {
+  grid-column: 2/5;
+  grid-row: 4/5;
+}
+@media (max-width: 767px) {
+.content > .body-copy[data-v-30ddd532] {
+    grid-column: 1/9;
+    grid-row: 5/6;
+}
+}
+.content > .body-copy > ul[data-v-30ddd532] {
   padding-left: 20px;
   margin: 20px 0;
 }
 </style><meta property="og:type" content="website" data-vue-router-controlled=""><meta property="og:title" content="About reflexology" data-vue-router-controlled=""><meta name="description" content="The ancient practice of reflexology was developed from the premise that there are reflexes in your feet that correspond with different parts of your body." data-vue-router-controlled=""><meta property="og:description" content="The ancient practice of reflexology was developed from the premise that there are reflexes in your feet that correspond with different parts of your body." data-vue-router-controlled=""><meta property="og:url" content="https://glowreflexology.co.uk/about-reflexology" data-vue-router-controlled=""><meta property="og:site_name" content="glow reflexology" data-vue-router-controlled=""><meta property="og:locale" content="en_GB" data-vue-router-controlled=""></head>
 <body>
-  <div id="site-template"><!----> <header class="compact about-reflexology"><a href="/" class="router-link-active"><div class="logo"><span class="glow pacifico">glow</span> <span class="reflexology lato">reflexology</span></div></a> <ul class="menu"><li class="link link-dark active fadeOut"><a href="/about-reflexology" class="router-link-exact-active router-link-active">Reflexology</a></li><li class="link link-dark fadeOut"><a href="/maternity" class="">Maternity</a></li><li class="link link-dark fadeOut"><a href="/what-to-expect" class="">What to expect</a></li><li class="link link-dark fadeOut"><a href="/pricing-offers" class="">Pricing</a></li><li class="link link-dark fadeOut"><a href="/about-me" class="">About me</a></li><li class="link link-dark fadeOut"><a href="/contact" class="">Contact</a></li><li class="link link-dark fadeOut"><a href="/blog/how-to-get-more-sleep" class="">Blog</a></li></ul> <ul class="menu menu-responsive fade show-with-menu"><li class="link active"><a href="/about-reflexology" class="router-link-exact-active router-link-active">Reflexology</a></li><li class="link"><a href="/maternity" class="">Maternity</a></li><li class="link"><a href="/what-to-expect" class="">What to expect</a></li><li class="link"><a href="/pricing-offers" class="">Pricing</a></li><li class="link"><a href="/about-me" class="">About me</a></li><li class="link"><a href="/contact" class="">Contact</a></li><li class="link"><a href="/blog/how-to-get-more-sleep" class="">Blog</a></li></ul> <i onclick="toggleMenu(true)" class="fas fa-bars show-with-menu link-dark"></i> <i onclick="toggleMenu(false)" class="fas fa-times fade show-with-menu"></i> <div class="overlay fade show-with-menu"></div> <footer class="fade show-with-menu"><div class="social"><span class="link"><a href="https://www.facebook.com/glowwithreflexology" target="_blank"><i class="fab fa-facebook-square"></i></a></span> <span class="link"><a href="https://www.instagram.com/glowwithreflexology" target="_blank"><i class="fab fa-instagram"></i></a></span></div> <div class="links"><span class="link"><a href="/data-protection-policy" class="">data protection policy</a></span> <span class="link"><a href="/code-of-ethics" class="">code of ethics</a></span></div></footer></header> <div id="template" class="about-reflexology"><div class="about-reflexology content"><div class="title"><h1>about reflexology</h1></div> <h3>The ancient practice of foot reflexology was developed from the premise that there are over 7,000 reflex points in the feet that can be mapped to different parts of the body.</h3> <div class="image"></div> <div class="body-copy"><p>Applying pressure to these reflexes is deeply relaxing which in turn can provide the optimal state for your body to heal.</p> <p>Reflexologists treat people as a whole rather than specific conditions/symptoms. We support people living with illnesses, rather than treat their illnesses.</p> <p>Too much stress and tension over a prolonged period of time can have such a detrimental effect on your health and wellbeing.  Reflexology is fantastic at promoting :</p> <ul class="bold"><li>Relaxation</li> <li>Release of tension</li> <li>Improved sleep</li> <li>Improved mood</li> <li>Increased wellbeing</li></ul> <p>While reflexology is a complimentary therapy, it is recognised by the NHS. It works very well alongside conventional medicine but should never replace it. If you have any health concerns, always consult your GP first.</p> <p>Please check out my social media for relevant articles and research as well as reviews of glow reflexology: <a href="https://www.facebook.com/glowwithreflexology" target="_blank" style="margin: 0px 5px;"><i class="fab fa-facebook-square"></i></a> <a href="https://www.instagram.com/glowreflexology" target="_blank"><i class="fab fa-instagram"></i></a></p></div></div></div> <footer class="show-with-menu about-reflexology"><div class="social"><span class="link"><a href="https://www.facebook.com/glowwithreflexology" target="_blank"><i class="fab fa-facebook-square"></i></a></span> <span class="link"><a href="https://www.instagram.com/glowwithreflexology" target="_blank"><i class="fab fa-instagram"></i></a></span></div> <div class="links"><span class="link"><a href="/data-protection-policy" class="">data protection policy</a></span> <span class="link"><a href="/code-of-ethics" class="">code of ethics</a></span></div></footer></div>
+  <div id="site-template"><!----> <header class="compact about-reflexology"><a href="/" class="router-link-active"><div class="logo"><span class="glow pacifico">glow</span> <span class="reflexology lato">reflexology</span></div></a> <ul class="menu"><li class="link link-dark active fadeOut"><a href="/about-reflexology" class="router-link-exact-active router-link-active">Reflexology</a></li><li class="link link-dark fadeOut"><a href="/maternity" class="">Maternity</a></li><li class="link link-dark fadeOut"><a href="/what-to-expect" class="">What to expect</a></li><li class="link link-dark fadeOut"><a href="/pricing-offers" class="">Pricing</a></li><li class="link link-dark fadeOut"><a href="/about-me" class="">About me</a></li><li class="link link-dark fadeOut"><a href="/contact" class="">Contact</a></li><li class="link link-dark fadeOut"><a href="/blog" class="">Blog</a></li></ul> <ul class="menu menu-responsive fade show-with-menu"><li class="link active"><a href="/about-reflexology" class="router-link-exact-active router-link-active">Reflexology</a></li><li class="link"><a href="/maternity" class="">Maternity</a></li><li class="link"><a href="/what-to-expect" class="">What to expect</a></li><li class="link"><a href="/pricing-offers" class="">Pricing</a></li><li class="link"><a href="/about-me" class="">About me</a></li><li class="link"><a href="/contact" class="">Contact</a></li><li class="link"><a href="/blog" class="">Blog</a></li></ul> <i onclick="toggleMenu()" class="fas fa-bars show-with-menu link-dark"></i> <i onclick="toggleMenu()" class="fas fa-times fade show-with-menu"></i> <div onclick="toggleMenu()" class="overlay fade show-with-menu"></div> <footer class="fade show-with-menu"><div class="social"><span class="link"><a href="https://www.facebook.com/glowwithreflexology" target="_blank"><i class="fab fa-facebook-square"></i></a></span> <span class="link"><a href="https://www.instagram.com/glowwithreflexology" target="_blank"><i class="fab fa-instagram"></i></a></span></div> <div class="links"><span class="link"><a href="/data-protection-policy" class="">data protection policy</a></span> <span class="link"><a href="/code-of-ethics" class="">code of ethics</a></span></div></footer></header> <div id="template" class="about-reflexology"><div data-v-55b19354="" class="content"><div data-v-55b19354="" class="title"><h1 data-v-55b19354="">about reflexology</h1></div> <h3 data-v-55b19354="">The ancient practice of foot reflexology was developed from the premise that there are over 7,000 reflex points in the feet that can be mapped to different parts of the body.</h3> <img data-v-55b19354="" src="/src/assets/images/barefoot-close-up.jpg" alt="Foot reflexology" class="image"> <div data-v-55b19354="" class="body-copy"><p data-v-55b19354="">Applying pressure to these reflexes is deeply relaxing which in turn can provide the optimal state for your body to heal.</p> <p data-v-55b19354="">Reflexologists treat people as a whole rather than specific conditions/symptoms. We support people living with illnesses, rather than treat their illnesses.</p> <p data-v-55b19354="">Too much stress and tension over a prolonged period of time can have such a detrimental effect on your health and wellbeing.  Reflexology is fantastic at promoting :</p> <ul data-v-55b19354="" class="bold"><li data-v-55b19354="">Relaxation</li> <li data-v-55b19354="">Release of tension</li> <li data-v-55b19354="">Improved sleep</li> <li data-v-55b19354="">Improved mood</li> <li data-v-55b19354="">Increased wellbeing</li></ul> <p data-v-55b19354="">While reflexology is a complimentary therapy, it is recognised by the NHS. It works very well alongside conventional medicine but should never replace it. If you have any health concerns, always consult your GP first.</p> <p data-v-55b19354="">Please check out my social media for relevant articles and research as well as reviews of glow reflexology: <a data-v-55b19354="" href="https://www.facebook.com/glowwithreflexology" target="_blank" style="margin: 0px 5px;"><i data-v-55b19354="" class="fab fa-facebook-square"></i></a> <a data-v-55b19354="" href="https://www.instagram.com/glowreflexology" target="_blank"><i data-v-55b19354="" class="fab fa-instagram"></i></a></p></div></div></div> <footer class="show-with-menu about-reflexology"><div class="social"><span class="link"><a href="https://www.facebook.com/glowwithreflexology" target="_blank"><i class="fab fa-facebook-square"></i></a></span> <span class="link"><a href="https://www.instagram.com/glowwithreflexology" target="_blank"><i class="fab fa-instagram"></i></a></span></div> <div class="links"><span class="link"><a href="/data-protection-policy" class="">data protection policy</a></span> <span class="link"><a href="/code-of-ethics" class="">code of ethics</a></span></div></footer></div>
 <script type="text/javascript" src="/build.js"></script>
 
 </body></html>

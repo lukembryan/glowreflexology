@@ -1,10 +1,10 @@
 <template>
-  <div class="about-reflexology content">
+  <div class="content">
     <div class="title">
       <h1>about reflexology</h1>
     </div>
     <h3>The ancient practice of foot reflexology was developed from the premise that there are over 7,000 reflex points in the feet that can be mapped to different parts of the body.</h3>
-    <div class="image"></div>
+    <img class="image" src="/src/assets/images/barefoot-close-up.jpg" alt="Foot reflexology" />
     <div class="body-copy">
       <p>Applying pressure to these reflexes is deeply relaxing which in turn can provide the optimal state for your body to heal.</p>
       <p>Reflexologists treat people as a whole rather than specific conditions/symptoms. We support people living with illnesses, rather than treat their illnesses.</p>
@@ -23,6 +23,8 @@
 </template>
 
 <script>
+import barefootImg from '../assets/images/barefoot-close-up.jpg';
+
 export default {
   data () {
     return {}
@@ -30,4 +32,41 @@ export default {
 }
 </script>
 
-<style></style>
+<style scoped lang="less">
+@import '../assets/css/less/responsive.less';
+
+.content {
+  > .title {
+    grid-column: 2/8;
+    grid-row: 1/2;
+    .screen-xs-max({
+      grid-column: 1/9;
+      grid-row: 2/3;
+    });
+  }
+  > h3 {
+    grid-column: 2/5;
+    grid-row: 2/3;
+    margin: 0;
+    .screen-xs-max({
+      grid-column: 1/9;
+      grid-row: 3/4;
+    });
+  }
+  > .image {
+    object-position: left bottom;
+  }
+  > .body-copy {
+    grid-column: 2/5;
+    grid-row: 3/4;
+    .screen-xs-max({
+      grid-column: 1/9;
+      grid-row: 4/5;
+    });
+    > ul {
+      padding-left: 20px;
+      margin: 20px 0;
+    }
+  }
+}
+</style>

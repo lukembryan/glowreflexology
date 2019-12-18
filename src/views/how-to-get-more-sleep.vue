@@ -1,5 +1,5 @@
 <template>
-  <div class="how-to-get-more-sleep content">
+  <div class="content">
     <div class="subtitle">
       <h1>blog</h1>
       <p>10th of November 2019</p>
@@ -8,7 +8,7 @@
       <h2>how to...get more sleep</h2>
     </div>
     <h3>We all know that a lack of sleep can make our days much harder than they would otherwise be.</h3>
-    <div class="image"></div>
+    <img class="image" src="/src/assets/images/sleep.jpg" alt="Tired person sleeping on the sofa" />
     <div class="body-copy">
       <p>Personally, I get clumsy, tearful and snappy so it affects the poor people I share my life with too. When you sleep, your hormones rebalance so not sleeping can make you all out of whack - it affects your stress hormones, how hungry you feel, your insulin levels... long-term insomnia can have more serious impact - cardiovascular disease, depression (need I go on!) This is why it needs addressing if it is becoming a problem.</p>
       <p>I found it fairly easy to jot down a list of tips to help with sleeplessness. This is because I've been through it (and then some!) It got bad when I worked in busy jobs in London and Melbourne, I would average about 4 hours’ sleep a night as I found it so hard to switch off. Then when pregnant, it got worse - I would go for longer spells of just not sleeping at all, which I know is common (due to hormonal changes and not being able to get comfortable). I struggle to sleep when I go away, which means holidays aren’t always as relaxing as they should be. Now I have two young boys who often have me up at night - but I manage to get back to sleep fairly easily so it isn’t too much of a problem (most of the time). I hope if you are suffering, some of these tips will be of help to you:</p>
@@ -35,6 +35,8 @@
 </template>
 
 <script>
+import sleepImg from '../assets/images/sleep.jpg';
+
 export default {
   data () {
     return {}
@@ -80,14 +82,11 @@ export default {
     });
   }
   > .image {
-    grid-column: 5/8;
     grid-row: 3/5;
+    object-position: left bottom;
     .screen-xs-max({
-      grid-column: 1/9;
       grid-row: 2/3;
     });
-    background-image: url(../assets/images/sleep.jpg);
-    background-position: bottom left;
   }
   > .body-copy {
     grid-column: 2/5;

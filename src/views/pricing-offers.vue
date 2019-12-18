@@ -1,5 +1,5 @@
 <template>
-  <div class="pricing-offers content">
+  <div class="content">
     <div class="title">
       <h1>pricing &amp; offers</h1>
     </div>
@@ -14,11 +14,13 @@
       <h3>Cancellations</h3>
       <p>While it is appreciated that emergencies can crop up at any time, glow reflexology is a small business so have to reserve the right to charge for the appointment if it is cancelled with less than 24 hours notice.</p>
     </div>
-    <div class="image"></div>
+    <img class="image" src="/src/assets/images/yoga.jpg" alt="Yoga with a view" />
   </div>
 </template>
 
 <script>
+import yogaImg from '../assets/images/yoga.jpg';
+
 export default {
   data () {
     return {}
@@ -26,4 +28,26 @@ export default {
 }
 </script>
 
-<style></style>
+<style scoped lang="less">
+@import '../assets/css/less/responsive.less';
+
+.content {
+  > .title {
+    grid-column: 2/8;
+    grid-row: 1/2;
+    .screen-xs-max({
+      grid-column: 1/9;
+      grid-row: 2/3;
+    });
+  }
+  > .body-copy {
+    grid-column: 2/5;
+    grid-row: 2/3;
+    .screen-xs-max({
+      grid-column: 1/9;
+      grid-row: 3/4;
+    });
+  }
+  > .image {}
+}
+</style>
