@@ -36,12 +36,12 @@
             </tr>
             <tr>
               <td>Wed</td>
-              <td>6:30pm - 9:00pm</td>
-              <td>Home visit</td>
+              <td>9:30am - 2:30pm<hr>6:30pm - 9:00pm</td>
+              <td>Home visits</td>
             </tr>
             <tr>
               <td>Thu</td>
-              <td>9:30am - 2:30pm<hr>6:30pm - 9:00pm</td>
+              <td>6:30pm - 9:00pm</td>
               <td>Home visits</td>
             </tr>
             <tr>

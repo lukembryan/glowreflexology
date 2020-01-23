@@ -5,12 +5,30 @@
     	<span class="reflexology lato">reflexology</span>
     </div>
     <div class="body-copy">
+      <router-link to="/contact"><span class="link">enquire here</span></router-link>
     	<h1 class="home lato">find your glow with reflexology</h1>
-    	<router-link to="/contact"><span class="link">enquire here</span></router-link>
+      <div class="summary">
+        <p>Operating on a mobile basis within a 10 mile radius of Horsham.</p>
+        <p>Member of the Federation of Holistic Therapists and Association of Reflexologists.</p>
+      </div>
     </div>
-    <div class="summary">
-      <p>Operating on a mobile basis within a 10 mile radius of Horsham.</p>
-      <p>Member of the Federation of Holistic Therapists and Association of Reflexologists.</p>
+    <div class="latest-updates">
+      <h3>latest updates</h3>
+      <router-link to="/blog/benefits-of-postnatal-reflexology">
+        <div class="alert alert-primary" role="alert">
+          <span class="badge">23 Jan 2020</span> new blog post!  "benefits of postnatal reflexology"
+        </div>
+      </router-link>
+      <router-link to="/what-to-expect">
+        <div class="alert alert-secondary" role="alert">
+          <span class="badge">9 Jan 2020</span> new stress melting and moisturising hand reflexology treatment now available as an add on to foot reflexology
+        </div>
+      </router-link>
+      <router-link to="/blog/how-to-avoid-festive-fatigue">
+        <div class="alert alert-secondary" role="alert">
+          <span class="badge">18 Dec 2019</span> new blog post!  "how to... avoid festive fatigue"
+        </div>
+      </router-link>
     </div>
     <div class="bg"></div>
   </div>
@@ -31,6 +49,7 @@ export default {
 
 <style scoped lang="less">
 @import '../assets/css/less/responsive.less';
+@import '../assets/css/less/palette.less';
 
 .content {
   padding: 0 30px 30px;
@@ -71,18 +90,54 @@ export default {
       text-transform: uppercase;
       text-shadow: #333 0px 0px 20px;
     }
+    .summary {
+      font-size: 1.2em;
+      text-align: right;
+      font-weight: 100;
+      margin: 5%;
+      .screen-xs-max({
+        text-align: center;
+      });
+    }
   }
-  .summary {
-    grid-row: 2/3;
+  .latest-updates {
+    grid-row: 2;
     grid-column: 1/4;
-    font-size: 1.2em;
+    width: auto;
+    padding: 0 5%;
     text-align: left;
-    font-weight: 100;
     .screen-xs-max({
-      grid-row: 3/4;
+      grid-row: 4/5;
       grid-column: 2/8;
       text-align: center;
     });
+    .alert {
+      position: relative;
+      font-weight: 400;
+      text-align: left;
+      padding: 15px 15px;
+      margin-bottom: 20px;
+      font-size: 0.9em;
+      border-radius: 0;
+      &.alert-primary {
+        color: darken(@brown, 40%);
+        background-color: fade(@orange, 50%);
+        border: 1px solid @brown;
+      }
+      &.alert-secondary {
+        color: darken(@brown, 40%);
+        background-color: fade(#fff, 20%);
+        border: 1px solid darken(@brown, 20%);
+      }
+      > .badge {
+        border-radius: 0;
+        position: absolute;
+        right: 10px;
+        top: -10px;
+        color: darken(@brown, 40%);
+        background-color: fade(#fff, 80%);
+      }
+    }
   }
   > .bg {
     position: fixed;

@@ -100,7 +100,8 @@ if (process.env.NODE_ENV === 'production') {
         '/code-of-ethics',
         '/blog',
         '/blog/how-to-get-more-sleep',
-        '/blog/how-to-avoid-festive-fatigue'
+        '/blog/how-to-avoid-festive-fatigue',
+        '/blog/benefits-of-postnatal-reflexology'
       ],
       renderer: new Renderer({
         inject: {

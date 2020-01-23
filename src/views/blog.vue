@@ -18,6 +18,12 @@ export default {
     return {
       posts: [
         {
+          title: 'benefits of postnatal reflexology',
+          date: '23rd of January 2020',
+          image: 'canal-walk-with-newborn.jpg',
+          route: '/blog/benefits-of-postnatal-reflexology'
+        },
+        {
           title: 'how to...avoid festive fatigue',
           date: '18th of December 2019',
           image: 'festivities.jpg',

@@ -16,6 +16,7 @@ import CodeOfEthics from './views/code-of-ethics.vue';
 import Blog from './views/blog.vue';
 import HowToGetMoreSleep from './views/how-to-get-more-sleep.vue';
 import HowToAvoidFestiveFatigue from './views/how-to-avoid-festive-fatigue.vue';
+import BenefitsOfPostnatalReflexology from './views/benefits-of-postnatal-reflexology.vue';
 
 Vue.use(VueRouter);
 
@@ -139,6 +140,18 @@ const routes = [
       { name: 'description', content: 'A list of my top tips to get you through the challenges & stress of the festive season.' },
       { property: 'og:description', content: 'A list of my top tips to get you through the challenges & stress of the festive season.' },
       { property: 'og:url', content: 'https://glowreflexology.co.uk/blog/how-to-avoid-festive-fatigue' },
+      { property: 'og:site_name', content: 'glow reflexology' },
+      { property: 'og:locale', content: 'en_GB' }
+    ]
+  }},
+  { path: '/blog/benefits-of-postnatal-reflexology', component: BenefitsOfPostnatalReflexology, meta: {
+    title: 'Benefits of postnatal reflexology',
+    metaTags: [
+      { property: 'og:type', content: 'website' },
+      { property: 'og:title', content: 'Benefits of postnatal reflexology' },
+      { name: 'description', content: 'Reflexology helps encourage recovery at a time when new mums are often overlooked.' },
+      { property: 'og:description', content: 'Reflexology helps encourage recovery at a time when new mums are often overlooked.' },
+      { property: 'og:url', content: 'https://glowreflexology.co.uk/blog/benefits-of-postnatal-reflexology' },
       { property: 'og:site_name', content: 'glow reflexology' },
       { property: 'og:locale', content: 'en_GB' }
     ]
