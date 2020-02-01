@@ -23,8 +23,7 @@
       <p>1 hour 10-15 minute stress melting foot and hand reflexology treatment (including consultation) - <span class="bold">£40</span></p>
       <p>1.5 hour pre-conception or late pregnancy (37+ weeks) foot reflexology treatment (inc. consultation) - <span class="bold">£50</span></p>
       <h3>Offers</h3>
-      <p><span class="bold">"Give it a go":</span><br />£5 off your first treatment</p>
-      <p><span class="bold">“Recommend a friend”:</span><br />If you are an existing client and you put a friend or family member in touch, both you and your friend can enjoy £10 off a treatment.</p>
+      <p><span class="bold">“Recommend a friend”:</span><br />If you are an existing client and you put a friend or family member in touch, both you and your friend can enjoy £5 off a treatment.</p>
       <p><span class="bold">Loyalty scheme:</span><br />Enjoy your 6th treatment for free</p>
       <h3>Cancellations</h3>
       <p>While it is appreciated that emergencies can crop up at any time, glow reflexology is a small business so have to reserve the right to charge for the appointment if it is cancelled with less than 24 hours notice.</p>
