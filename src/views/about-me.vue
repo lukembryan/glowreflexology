@@ -22,12 +22,12 @@
       <img class="image" src="/src/assets/images/excellence-in-reflexology-logo.png" alt="Association of Reflexologists" />
       <img class="image" src="/src/assets/images/fht_psa_logo_member.jpg" alt="Federation of Holistic Therapists" />
     </div>
-    <img class="image" src="/src/assets/images/about-me.jpg" alt="Mobile reflexologist, Horsham" />
+    <img class="image" src="/src/assets/images/emily-bryan-reflexologist.jpg" alt="Emily Bryan, Mobile reflexologist, Horsham" />
   </div>
 </template>
 
 <script>
-import aboutMeImg from '../assets/images/about-me.jpg';
+import emilyBryanImg from '../assets/images/emily-bryan-reflexologist.jpg';
 import excellenceImg from '../assets/images/excellence-in-reflexology-logo.png';
 import FHTImg from '../assets/images/fht_psa_logo_member.jpg';
 import emSigImg from '../assets/images/em-sig.png';
@@ -111,6 +111,8 @@ export default {
       }
     }
   }
-  > .image {}
+  > .image {
+    height: auto;
+  }
 }
 </style>
