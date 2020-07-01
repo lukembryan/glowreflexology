@@ -17,6 +17,7 @@ import Blog from './views/blog.vue';
 import HowToGetMoreSleep from './views/how-to-get-more-sleep.vue';
 import HowToAvoidFestiveFatigue from './views/how-to-avoid-festive-fatigue.vue';
 import BenefitsOfPostnatalReflexology from './views/benefits-of-postnatal-reflexology.vue';
+import Covid19 from './views/covid-19.vue';
 
 Vue.use(VueRouter);
 
@@ -154,6 +155,12 @@ const routes = [
       { property: 'og:url', content: 'https://glowreflexology.co.uk/blog/benefits-of-postnatal-reflexology' },
       { property: 'og:site_name', content: 'glow reflexology' },
       { property: 'og:locale', content: 'en_GB' }
+    ]
+  }},
+  { path: '/covid-19', component: Covid19, meta: {
+    title: 'COVID-19: safely re-opening my practice',
+    metaTags: [
+      { name: 'robots', content: 'noindex, nofollow' }
     ]
   }}
 ];

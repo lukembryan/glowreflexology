@@ -173,6 +173,28 @@ p {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
 }
+.banner {
+  position: relative;
+  width: 100%;
+  line-height: 1.5em;
+  color: #fff;
+  background-color: #594e40;
+  border-radius: 0;
+  border: none;
+  z-index: 2;
+}
+.banner:hover {
+  color: #cc9e87;
+  background-color: #4a4135;
+}
+@media (max-width: 399px) {
+.banner {
+    font-size: 0.9em;
+}
+}
+.banner-shown > header {
+  position: relative;
+}
 header {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -410,7 +432,7 @@ i.fa-bars,
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-auto-rows: min-content;
   grid-gap: 50px 30px;
-  padding: 9% 30px 100px;
+  padding: 5% 30px 100px;
   width: 100%;
   font-size: 1.2em;
   z-index: 1;
@@ -490,7 +512,7 @@ i.fa-bars,
   grid-column: 2/8;
 }
 #template {
-  padding-top: 90px;
+  padding-top: 40px;
   width: 100%;
   background-size: cover;
   transition: all 0.3s ease-in-out;
@@ -556,10 +578,10 @@ i.fa-bars,
 </style><style type="text/css">/* =============================================================================
    Media queries for different screen sizes
    ========================================================================== */
-.content[data-v-81d84f76] {
-  padding: 0 30px 30px;
+.content[data-v-a34a17e6] {
+  padding: 0 30px 8%;
 }
-.content > .logo[data-v-81d84f76] {
+.content > .logo[data-v-a34a17e6] {
   grid-column: 1/4;
   justify-self: start;
   align-self: start;
@@ -567,45 +589,45 @@ i.fa-bars,
   cursor: default;
 }
 @media (max-width: 767px) {
-.content > .logo[data-v-81d84f76] {
+.content > .logo[data-v-a34a17e6] {
     grid-column: 1/9;
     justify-self: center;
     align-self: center;
 }
 }
-.content > .body-copy[data-v-81d84f76] {
+.content > .body-copy[data-v-a34a17e6] {
   grid-column: 4/9;
   grid-row: 1/3;
   text-align: right;
 }
 @media (max-width: 767px) {
-.content > .body-copy[data-v-81d84f76] {
+.content > .body-copy[data-v-a34a17e6] {
     grid-column: 1/9;
     grid-row: 2/3;
     text-align: center;
 }
 }
-.content > .body-copy > h1[data-v-81d84f76] {
+.content > .body-copy > h1[data-v-a34a17e6] {
   font-weight: 100;
   font-size: 5em;
   padding: 5%;
 }
 @media (max-width: 991px) {
-.content > .body-copy > h1[data-v-81d84f76] {
+.content > .body-copy > h1[data-v-a34a17e6] {
     font-size: 3.3em;
 }
 }
 @media (max-width: 575px) {
-.content > .body-copy > h1[data-v-81d84f76] {
+.content > .body-copy > h1[data-v-a34a17e6] {
     font-size: 2em;
 }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-.content > .body-copy > h1[data-v-81d84f76] {
-    font-size: 4.5em;
+.content > .body-copy > h1[data-v-a34a17e6] {
+    font-size: 4em;
 }
 }
-.content > .body-copy .link[data-v-81d84f76] {
+.content > .body-copy .link[data-v-a34a17e6] {
   width: auto;
   margin: 5%;
   font-size: 1.3em;
@@ -613,18 +635,18 @@ i.fa-bars,
   text-transform: uppercase;
   text-shadow: #333 0px 0px 20px;
 }
-.content > .body-copy .summary[data-v-81d84f76] {
+.content > .body-copy .summary[data-v-a34a17e6] {
   font-size: 1.2em;
   text-align: right;
   font-weight: 100;
   margin: 5%;
 }
 @media (max-width: 767px) {
-.content > .body-copy .summary[data-v-81d84f76] {
+.content > .body-copy .summary[data-v-a34a17e6] {
     text-align: center;
 }
 }
-.content .latest-updates[data-v-81d84f76] {
+.content .latest-updates[data-v-a34a17e6] {
   grid-row: 2;
   grid-column: 1/4;
   width: auto;
@@ -632,32 +654,37 @@ i.fa-bars,
   text-align: left;
 }
 @media (max-width: 767px) {
-.content .latest-updates[data-v-81d84f76] {
+.content .latest-updates[data-v-a34a17e6] {
     grid-row: 4/5;
     grid-column: 2/8;
     text-align: center;
 }
 }
-.content .latest-updates .alert[data-v-81d84f76] {
+.content .latest-updates .alert[data-v-a34a17e6] {
   position: relative;
   font-weight: 400;
   text-align: left;
   padding: 15px 15px;
   margin-bottom: 20px;
-  font-size: 0.9em;
+  font-size: 0.7em;
   border-radius: 0;
 }
-.content .latest-updates .alert.alert-primary[data-v-81d84f76] {
+@media (max-width: 767px) {
+.content .latest-updates .alert[data-v-a34a17e6] {
+    font-size: 0.9em;
+}
+}
+.content .latest-updates .alert.alert-primary[data-v-a34a17e6] {
   color: #040302;
   background-color: rgba(241, 182, 105, 0.5);
   border: 1px solid #8b5c47;
 }
-.content .latest-updates .alert.alert-secondary[data-v-81d84f76] {
+.content .latest-updates .alert.alert-secondary[data-v-a34a17e6] {
   color: #040302;
   background-color: rgba(255, 255, 255, 0.2);
   border: 1px solid #472f25;
 }
-.content .latest-updates .alert > .badge[data-v-81d84f76] {
+.content .latest-updates .alert > .badge[data-v-a34a17e6] {
   border-radius: 0;
   position: absolute;
   right: 10px;
@@ -665,7 +692,7 @@ i.fa-bars,
   color: #040302;
   background-color: rgba(255, 255, 255, 0.8);
 }
-.content > .bg[data-v-81d84f76] {
+.content > .bg[data-v-a34a17e6] {
   position: fixed;
   top: 0;
   left: 0;
@@ -852,97 +879,97 @@ i.fa-bars,
 </style><style type="text/css">/* =============================================================================
    Media queries for different screen sizes
    ========================================================================== */
-.content > .title[data-v-0343f014] {
+.content > .title[data-v-4b7f9154] {
   grid-column: 2/8;
 }
 @media (max-width: 767px) {
-.content > .title[data-v-0343f014] {
+.content > .title[data-v-4b7f9154] {
     grid-column: 1/9;
     grid-row: 2/3;
 }
 }
-.content > .body-copy[data-v-0343f014] {
+.content > .body-copy[data-v-4b7f9154] {
   grid-column: 2/5;
 }
 @media (max-width: 767px) {
-.content > .body-copy[data-v-0343f014] {
+.content > .body-copy[data-v-4b7f9154] {
     grid-column: 1/9;
     grid-row: 3/4;
 }
 }
-.content > .body-copy .em-sig[data-v-0343f014] {
+.content > .body-copy .em-sig[data-v-4b7f9154] {
   height: calc(46vw/3);
   width: calc(120vw/3);
   margin: 0 auto;
 }
 @media (min-width: 768px) {
-.content > .body-copy .em-sig[data-v-0343f014] {
+.content > .body-copy .em-sig[data-v-4b7f9154] {
     height: calc(20vw/3);
     width: calc(51vw/3);
 }
 }
-.content > .images[data-v-0343f014] {
+.content > .images[data-v-4b7f9154] {
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-column: 2/8;
   grid-gap: 30px;
 }
 @media (max-width: 767px) {
-.content > .images[data-v-0343f014] {
+.content > .images[data-v-4b7f9154] {
     grid-column: 1/9;
 }
 }
-.content > .images > .image[data-v-0343f014] {
+.content > .images > .image[data-v-4b7f9154] {
   width: 100%;
   border: none;
   height: calc(100vw/3);
 }
-.content > .images > .image[data-v-0343f014]:nth-child(1) {
+.content > .images > .image[data-v-4b7f9154]:nth-child(1) {
   grid-column: 1/2;
 }
 @media (max-width: 575px) {
-.content > .images > .image[data-v-0343f014]:nth-child(1) {
+.content > .images > .image[data-v-4b7f9154]:nth-child(1) {
     grid-column: 1/3;
 }
 }
 @media (min-width: 768px) {
-.content > .images > .image[data-v-0343f014]:nth-child(1) {
+.content > .images > .image[data-v-4b7f9154]:nth-child(1) {
     height: calc(51vw/3);
 }
 }
 @media (max-width: 767px) {
-.content > .images > .image[data-v-0343f014]:nth-child(1) {
+.content > .images > .image[data-v-4b7f9154]:nth-child(1) {
     height: calc(65vw/3);
 }
 }
 @media (max-width: 575px) {
-.content > .images > .image[data-v-0343f014]:nth-child(1) {
+.content > .images > .image[data-v-4b7f9154]:nth-child(1) {
     width: calc(100vw/3);
     height: calc(100vw/3);
     margin: 0 auto;
     grid-column: 1/3;
 }
 }
-.content > .images > .image[data-v-0343f014]:nth-child(2) {
+.content > .images > .image[data-v-4b7f9154]:nth-child(2) {
   grid-column: 2/3;
 }
 @media (min-width: 768px) {
-.content > .images > .image[data-v-0343f014]:nth-child(2) {
+.content > .images > .image[data-v-4b7f9154]:nth-child(2) {
     height: calc(50vw/3);
 }
 }
 @media (max-width: 767px) {
-.content > .images > .image[data-v-0343f014]:nth-child(2) {
+.content > .images > .image[data-v-4b7f9154]:nth-child(2) {
     height: calc(70vw/3);
 }
 }
 @media (max-width: 575px) {
-.content > .images > .image[data-v-0343f014]:nth-child(2) {
+.content > .images > .image[data-v-4b7f9154]:nth-child(2) {
     height: calc(90vw/3);
     grid-column: 1/3;
 }
 }
-.content > .image[data-v-0343f014] {
+.content > .image[data-v-4b7f9154] {
   height: auto;
 }
 </style><style type="text/css">/* =============================================================================
@@ -1231,9 +1258,109 @@ i.fa-bars,
   padding-left: 20px;
   margin: 20px 0;
 }
+</style><style type="text/css">/* =============================================================================
+   Media queries for different screen sizes
+   ========================================================================== */
+.content > .title[data-v-25bcce98] {
+  grid-column: 2/8;
+  font-size: 0.5em;
+}
+@media (max-width: 767px) {
+.content > .title[data-v-25bcce98] {
+    grid-column: 1/9;
+    grid-row: 2/3;
+}
+}
+.content > .body-copy[data-v-25bcce98] {
+  grid-column: 2/5;
+}
+@media (max-width: 767px) {
+.content > .body-copy[data-v-25bcce98] {
+    grid-column: 1/9;
+    grid-row: 3/4;
+}
+}
+.content > .body-copy .em-sig[data-v-25bcce98] {
+  height: calc(46vw/3);
+  width: calc(120vw/3);
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+.content > .body-copy .em-sig[data-v-25bcce98] {
+    height: calc(20vw/3);
+    width: calc(51vw/3);
+}
+}
+.content > .images[data-v-25bcce98] {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-column: 2/8;
+  grid-gap: 30px;
+}
+@media (max-width: 767px) {
+.content > .images[data-v-25bcce98] {
+    grid-column: 1/9;
+}
+}
+.content > .images > .image[data-v-25bcce98] {
+  width: 100%;
+  border: none;
+  height: calc(100vw/3);
+}
+.content > .images > .image[data-v-25bcce98]:nth-child(1) {
+  grid-column: 1/2;
+}
+@media (max-width: 575px) {
+.content > .images > .image[data-v-25bcce98]:nth-child(1) {
+    grid-column: 1/3;
+}
+}
+@media (min-width: 768px) {
+.content > .images > .image[data-v-25bcce98]:nth-child(1) {
+    height: calc(51vw/3);
+}
+}
+@media (max-width: 767px) {
+.content > .images > .image[data-v-25bcce98]:nth-child(1) {
+    height: calc(65vw/3);
+}
+}
+@media (max-width: 575px) {
+.content > .images > .image[data-v-25bcce98]:nth-child(1) {
+    width: calc(100vw/3);
+    height: calc(100vw/3);
+    margin: 0 auto;
+    grid-column: 1/3;
+}
+}
+.content > .images > .image[data-v-25bcce98]:nth-child(2) {
+  grid-column: 2/3;
+}
+@media (min-width: 768px) {
+.content > .images > .image[data-v-25bcce98]:nth-child(2) {
+    height: calc(50vw/3);
+}
+}
+@media (max-width: 767px) {
+.content > .images > .image[data-v-25bcce98]:nth-child(2) {
+    height: calc(70vw/3);
+}
+}
+@media (max-width: 575px) {
+.content > .images > .image[data-v-25bcce98]:nth-child(2) {
+    height: calc(90vw/3);
+    grid-column: 1/3;
+}
+}
+.content > .image[data-v-25bcce98] {
+  height: auto;
+}
 </style><meta property="og:type" content="website" data-vue-router-controlled=""><meta property="og:title" content="Pricing &amp; offers" data-vue-router-controlled=""><meta name="description" content="Home visit in Horsham and surrounding areas, £35" data-vue-router-controlled=""><meta property="og:description" content="Home visit in Horsham and surrounding areas, £35" data-vue-router-controlled=""><meta property="og:url" content="https://glowreflexology.co.uk/pricing-offers" data-vue-router-controlled=""><meta property="og:site_name" content="glow reflexology" data-vue-router-controlled=""><meta property="og:locale" content="en_GB" data-vue-router-controlled=""></head>
 <body>
-  <div id="site-template"><!----> <header class="compact pricing-offers"><a href="/" class="router-link-active"><div class="logo"><span class="glow pacifico">glow</span> <span class="reflexology lato">reflexology</span></div></a> <ul class="menu"><li class="link link-dark fadeOut"><a href="/about-reflexology" class="">Reflexology</a></li><li class="link link-dark fadeOut"><a href="/maternity" class="">Maternity</a></li><li class="link link-dark fadeOut"><a href="/what-to-expect" class="">What to expect</a></li><li class="link link-dark active fadeOut"><a href="/pricing-offers" class="router-link-exact-active router-link-active">Pricing</a></li><li class="link link-dark fadeOut"><a href="/about-me" class="">About me</a></li><li class="link link-dark fadeOut"><a href="/contact" class="">Contact</a></li><li class="link link-dark fadeOut"><a href="/blog" class="">Blog</a></li></ul> <ul class="menu menu-responsive fade show-with-menu"><li class="link"><a href="/about-reflexology" class="">Reflexology</a></li><li class="link"><a href="/maternity" class="">Maternity</a></li><li class="link"><a href="/what-to-expect" class="">What to expect</a></li><li class="link active"><a href="/pricing-offers" class="router-link-exact-active router-link-active">Pricing</a></li><li class="link"><a href="/about-me" class="">About me</a></li><li class="link"><a href="/contact" class="">Contact</a></li><li class="link"><a href="/blog" class="">Blog</a></li></ul> <i onclick="toggleMenu()" class="fas fa-bars show-with-menu link-dark"></i> <i onclick="toggleMenu()" class="fas fa-times fade show-with-menu"></i> <div onclick="toggleMenu()" class="overlay fade show-with-menu"></div> <footer class="fade show-with-menu"><div class="social"><span class="link"><a href="https://www.facebook.com/glowwithreflexology" target="_blank"><i class="fab fa-facebook-square"></i></a></span> <span class="link"><a href="https://www.instagram.com/glowwithreflexology" target="_blank"><i class="fab fa-instagram"></i></a></span></div> <div class="links"><span class="link"><a href="/data-protection-policy" class="">data protection policy</a></span> <span class="link"><a href="/code-of-ethics" class="">code of ethics</a></span></div></footer></header> <div id="template" class="pricing-offers"><div data-v-5b608336="" class="content"><div data-v-5b608336="" class="title"><h1 data-v-5b608336="">pricing &amp; offers</h1></div> <img data-v-5b608336="" src="/src/assets/images/yoga.jpg" alt="Yoga with a view" class="image"> <div data-v-5b608336="" class="box"><div data-v-5b608336=""><h3 data-v-5b608336="">"Mummy to be" reflexology package:</h3> <h4 data-v-5b608336="">Duration varies - <strong data-v-5b608336="">£170</strong></h4> <p data-v-5b608336="">This package includes:</p> <ul data-v-5b608336=""><li data-v-5b608336="">4 x 1 hour reflexology treatments to be used between weeks 16 and 36</li> <li data-v-5b608336="">1 x 1.5 hour late pregnancy treatment to be used from weeks 37+</li> <li data-v-5b608336="">1 x 1 hour post-natal reflexology treatment to be used within the fourth trimester</li></ul> <p data-v-5b608336="">Separately these treatments would cost £225 so this package represents a £55 saving.  This would make a lovely gift for a mummy to be.</p></div></div> <div data-v-5b608336="" class="body-copy"><h3 data-v-5b608336="">Home visit in Horsham and surrounding areas</h3> <p data-v-5b608336="">1 hour foot reflexology treatment (inc. consultation) - <span data-v-5b608336="" class="bold">£35</span></p> <p data-v-5b608336="">1 hour 10-15 minute stress melting foot and hand reflexology treatment (including consultation) - <span data-v-5b608336="" class="bold">£40</span></p> <p data-v-5b608336="">1.5 hour pre-conception or late pregnancy (37+ weeks) foot reflexology treatment (inc. consultation) - <span data-v-5b608336="" class="bold">£50</span></p> <h3 data-v-5b608336="">Offers</h3> <p data-v-5b608336=""><span data-v-5b608336="" class="bold">“Recommend a friend”:</span><br data-v-5b608336="">If you are an existing client and you put a friend or family member in touch, both you and your friend can enjoy £5 off a treatment.</p> <p data-v-5b608336=""><span data-v-5b608336="" class="bold">Loyalty scheme:</span><br data-v-5b608336="">Enjoy your 6th treatment for free</p> <h3 data-v-5b608336="">Cancellations</h3> <p data-v-5b608336="">While it is appreciated that emergencies can crop up at any time, glow reflexology is a small business so have to reserve the right to charge for the appointment if it is cancelled with less than 24 hours notice.</p></div></div></div> <footer class="show-with-menu pricing-offers"><div class="social"><span class="link"><a href="https://www.facebook.com/glowwithreflexology" target="_blank"><i class="fab fa-facebook-square"></i></a></span> <span class="link"><a href="https://www.instagram.com/glowwithreflexology" target="_blank"><i class="fab fa-instagram"></i></a></span></div> <div class="links"><span class="link"><a href="/data-protection-policy" class="">data protection policy</a></span> <span class="link"><a href="/code-of-ethics" class="">code of ethics</a></span></div></footer></div>
+  <a class="banner btn btn-default text-center" href="/covid-19">
+    COVID-19: safely re-opening my practice
+  </a>
+  <div id="site-template" class="banner-shown"><!----> <header class="compact pricing-offers"><a href="/" class="router-link-active"><div class="logo"><span class="glow pacifico">glow</span> <span class="reflexology lato">reflexology</span></div></a> <ul class="menu"><li class="link link-dark fadeOut"><a href="/about-reflexology" class="">Reflexology</a></li><li class="link link-dark fadeOut"><a href="/maternity" class="">Maternity</a></li><li class="link link-dark fadeOut"><a href="/what-to-expect" class="">What to expect</a></li><li class="link link-dark active fadeOut"><a href="/pricing-offers" class="router-link-exact-active router-link-active">Pricing</a></li><li class="link link-dark fadeOut"><a href="/about-me" class="">About me</a></li><li class="link link-dark fadeOut"><a href="/contact" class="">Contact</a></li><li class="link link-dark fadeOut"><a href="/blog" class="">Blog</a></li></ul> <ul class="menu menu-responsive fade show-with-menu"><li class="link"><a href="/about-reflexology" class="">Reflexology</a></li><li class="link"><a href="/maternity" class="">Maternity</a></li><li class="link"><a href="/what-to-expect" class="">What to expect</a></li><li class="link active"><a href="/pricing-offers" class="router-link-exact-active router-link-active">Pricing</a></li><li class="link"><a href="/about-me" class="">About me</a></li><li class="link"><a href="/contact" class="">Contact</a></li><li class="link"><a href="/blog" class="">Blog</a></li></ul> <i onclick="toggleMenu()" class="fas fa-bars show-with-menu link-dark"></i> <i onclick="toggleMenu()" class="fas fa-times fade show-with-menu"></i> <div onclick="toggleMenu()" class="overlay fade show-with-menu"></div> <footer class="fade show-with-menu"><div class="social"><span class="link"><a href="https://www.facebook.com/glowwithreflexology" target="_blank"><i class="fab fa-facebook-square"></i></a></span> <span class="link"><a href="https://www.instagram.com/glowwithreflexology" target="_blank"><i class="fab fa-instagram"></i></a></span></div> <div class="links"><span class="link"><a href="/data-protection-policy" class="">data protection policy</a></span> <span class="link"><a href="/code-of-ethics" class="">code of ethics</a></span></div></footer></header> <div id="template" class="pricing-offers"><div data-v-5b608336="" class="content"><div data-v-5b608336="" class="title"><h1 data-v-5b608336="">pricing &amp; offers</h1></div> <img data-v-5b608336="" src="/src/assets/images/yoga.jpg" alt="Yoga with a view" class="image"> <div data-v-5b608336="" class="box"><div data-v-5b608336=""><h3 data-v-5b608336="">"Mummy to be" reflexology package:</h3> <h4 data-v-5b608336="">Duration varies - <strong data-v-5b608336="">£170</strong></h4> <p data-v-5b608336="">This package includes:</p> <ul data-v-5b608336=""><li data-v-5b608336="">4 x 1 hour reflexology treatments to be used between weeks 16 and 36</li> <li data-v-5b608336="">1 x 1.5 hour late pregnancy treatment to be used from weeks 37+</li> <li data-v-5b608336="">1 x 1 hour post-natal reflexology treatment to be used within the fourth trimester</li></ul> <p data-v-5b608336="">Separately these treatments would cost £225 so this package represents a £55 saving.  This would make a lovely gift for a mummy to be.</p></div></div> <div data-v-5b608336="" class="body-copy"><h3 data-v-5b608336="">Home visit in Horsham and surrounding areas</h3> <p data-v-5b608336="">1 hour foot reflexology treatment (inc. consultation) - <span data-v-5b608336="" class="bold">£35</span></p> <p data-v-5b608336="">1 hour 10-15 minute stress melting foot and hand reflexology treatment (including consultation) - <span data-v-5b608336="" class="bold">£40</span></p> <p data-v-5b608336="">1.5 hour pre-conception or late pregnancy (37+ weeks) foot reflexology treatment (inc. consultation) - <span data-v-5b608336="" class="bold">£50</span></p> <h3 data-v-5b608336="">Offers</h3> <p data-v-5b608336=""><span data-v-5b608336="" class="bold">“Recommend a friend”:</span><br data-v-5b608336="">If you are an existing client and you put a friend or family member in touch, both you and your friend can enjoy £5 off a treatment.</p> <p data-v-5b608336=""><span data-v-5b608336="" class="bold">Loyalty scheme:</span><br data-v-5b608336="">Enjoy your 6th treatment for free</p> <h3 data-v-5b608336="">Cancellations</h3> <p data-v-5b608336="">While it is appreciated that emergencies can crop up at any time, glow reflexology is a small business so have to reserve the right to charge for the appointment if it is cancelled with less than 24 hours notice.</p></div></div></div> <footer class="show-with-menu pricing-offers"><div class="social"><span class="link"><a href="https://www.facebook.com/glowwithreflexology" target="_blank"><i class="fab fa-facebook-square"></i></a></span> <span class="link"><a href="https://www.instagram.com/glowwithreflexology" target="_blank"><i class="fab fa-instagram"></i></a></span></div> <div class="links"><span class="link"><a href="/data-protection-policy" class="">data protection policy</a></span> <span class="link"><a href="/code-of-ethics" class="">code of ethics</a></span></div></footer></div>
 <script type="text/javascript" src="/build.js"></script>
 
 </body></html>

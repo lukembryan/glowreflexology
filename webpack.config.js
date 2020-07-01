@@ -101,7 +101,8 @@ if (process.env.NODE_ENV === 'production') {
         '/blog',
         '/blog/how-to-get-more-sleep',
         '/blog/how-to-avoid-festive-fatigue',
-        '/blog/benefits-of-postnatal-reflexology'
+        '/blog/benefits-of-postnatal-reflexology',
+        '/covid-19'
       ],
       renderer: new Renderer({
         inject: {

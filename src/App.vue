@@ -1,5 +1,5 @@
 <template>
-  <div id="site-template">
+  <div id="site-template" :class="{'banner-shown': banner}">
     <div class="responsive-test" v-if="dev">
       <span>tiny</span>
       <span>xxs</span>
@@ -9,7 +9,7 @@
       <span>lg</span>
       <span>xl</span>
     </div>
-    <header class="compact" v-bind:class="$route.path == '/' ? 'home' : $route.path.substring(1)">
+    <header class="compact" :class="$route.path == '/' ? 'home' : $route.path.substring(1)">
       <router-link to="/">
         <div class="logo" v-if="$route.path != '/'">
           <span class="glow pacifico">glow</span>
@@ -87,8 +87,8 @@ export default {
   name: 'site-template',
   data: function() {
     return {
-      dev: window.location.host == 'localhost:8080' ? true : false,
       showMenu: false,
+      banner: true && this.$route.path != '/covid-19',
       options: [
         {
           label: 'Reflexology',
@@ -121,7 +121,11 @@ export default {
       ]
     }
   },
-  computed: {},
+  computed: {
+    dev: function(){
+      return this.$store.state.dev;
+    }
+  },
   methods: {
     toggleMenu: function(){
       var elements = document.getElementById('site-template').getElementsByClassName('show-with-menu');
@@ -133,6 +137,7 @@ export default {
   watch: {
     $route (to, from){
       document.getElementById('template').scrollTo(0, 0);
+      this.banner = to.path != '/covid-19';
     }
   },
   created: function(){
@@ -306,6 +311,30 @@ p {
 .lato {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  line-height: 1.5em;
+  color: #fff;
+  background-color: @light-brown-grey;
+  border-radius: 0;
+  border: none;
+  z-index: 2;
+  &:hover {
+    color: @light-brown-tint;
+    background-color: darken(@light-brown-grey, 5%);
+  }
+  .screen-tiny({
+    font-size: 0.9em;
+  });
+}
+
+.banner-shown {
+  > header {
+    position: relative;
+  }
 }
 
 header {
@@ -533,7 +562,7 @@ i.fa-bars, i.fa-times {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-auto-rows: min-content;
   grid-gap: 50px 30px;
-  padding: 9% 30px 100px;
+  padding: 5% 30px 100px;
   .screen-xxs-max({
     padding: 30px;
   });
@@ -600,7 +629,7 @@ i.fa-bars, i.fa-times {
 }
 
 #template {
-  padding-top: 90px;
+  padding-top: 40px;
   width: 100%;
   background-size: cover;
   transition: all 0.3s ease-in-out;

@@ -9,24 +9,24 @@
     	<h1 class="home lato">find your glow with reflexology</h1>
       <div class="summary">
         <p>Operating on a mobile basis within a 10 mile radius of Horsham.</p>
-        <p>Member of the Federation of Holistic Therapists and Association of Reflexologists.</p>
+        <p>Member of the Association of Reflexologists.</p>
       </div>
     </div>
     <div class="latest-updates">
       <h3>latest updates</h3>
-      <router-link to="/blog/benefits-of-postnatal-reflexology">
+      <router-link to="/contact">
         <div class="alert alert-primary" role="alert">
+          <span class="badge">25 Jun 2020</span> Waiting list is now open!  Contact me to be added - I will be in touch as soon as the Government gives me go ahead to re-open.
+        </div>
+      </router-link>
+      <router-link to="/blog/benefits-of-postnatal-reflexology">
+        <div class="alert alert-secondary" role="alert">
           <span class="badge">23 Jan 2020</span> new blog post!  "benefits of postnatal reflexology"
         </div>
       </router-link>
       <router-link to="/what-to-expect">
         <div class="alert alert-secondary" role="alert">
           <span class="badge">9 Jan 2020</span> new stress melting and moisturising hand reflexology treatment now available as an add on to foot reflexology
-        </div>
-      </router-link>
-      <router-link to="/blog/how-to-avoid-festive-fatigue">
-        <div class="alert alert-secondary" role="alert">
-          <span class="badge">18 Dec 2019</span> new blog post!  "how to... avoid festive fatigue"
         </div>
       </router-link>
     </div>
@@ -52,7 +52,7 @@ export default {
 @import '../assets/css/less/palette.less';
 
 .content {
-  padding: 0 30px 30px;
+  padding: 0 30px 8%;
   > .logo {
     grid-column: 1/4;
     justify-self: start;
@@ -80,7 +80,7 @@ export default {
       padding: 5%;
       .screen-sm-max({ font-size: 3.3em; });
       .screen-xxs-max({ font-size: 2em; });
-      .screen-md({ font-size: 4.5em; });
+      .screen-md({ font-size: 4em; });
     }
     .link {
       width: auto;
@@ -117,8 +117,11 @@ export default {
       text-align: left;
       padding: 15px 15px;
       margin-bottom: 20px;
-      font-size: 0.9em;
+      font-size: 0.7em;
       border-radius: 0;
+      .screen-xs-max({
+        font-size: 0.9em;
+      });
       &.alert-primary {
         color: darken(@brown, 40%);
         background-color: fade(@orange, 50%);
