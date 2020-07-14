@@ -95,6 +95,10 @@ export default {
           path: '/about-reflexology'
         },
         {
+          label: 'Reproductive',
+          path: '/reproductive'
+        },
+        {
           label: 'Maternity',
           path: '/maternity'
         },
@@ -193,10 +197,13 @@ a, .link {
     color: @orange;
   }
 }
+.link-underline {
+  text-decoration: underline;
+}
 .link-dark {
-  color: @brown;
+  color: darken(@brown, 20%);
   &:hover, &:focus {
-    color: lighten(@brown, 10%);
+    color: darken(@brown, 25%);
   }
 }
 
@@ -481,7 +488,7 @@ ul {
     justify-self: end;
     align-self: center;
     z-index: 1;
-    .screen-sm-max({
+    .screen-md-max({
       display: none;
     });
     .screen-md({
@@ -547,7 +554,7 @@ i.fa-bars, i.fa-times {
   .screen-tiny({
     line-height: 1.2em;
   });
-  .screen-md-min({
+  .screen-lg-min({
     display: none;
   });
 }

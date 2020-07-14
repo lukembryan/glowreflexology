@@ -7,6 +7,7 @@ import { store } from './store';
 import Home from './views/home.vue';
 import AboutReflexology from './views/about-reflexology.vue';
 import WhatToExpect from './views/what-to-expect.vue';
+import Reproductive from './views/reproductive.vue';
 import Maternity from './views/maternity.vue';
 import PricingOffers from './views/pricing-offers.vue';
 import AboutMe from './views/about-me.vue';
@@ -57,6 +58,18 @@ const routes = [
       { name: 'description', content: 'I operate on a mobile basis within a 10 mile radius of Horsham.' },
       { property: 'og:description', content: 'I operate on a mobile basis within a 10 mile radius of Horsham.' },
       { property: 'og:url', content: 'https://glowreflexology.co.uk/what-to-expect' },
+      { property: 'og:site_name', content: 'glow reflexology' },
+      { property: 'og:locale', content: 'en_GB' }
+    ]
+  }},
+  { path: '/reproductive', component: Reproductive, meta: {
+    title: 'Reproductive reflexology',
+    metaTags: [
+      { property: 'og:type', content: 'website' },
+      { property: 'og:title', content: 'Reproductive reflexology' },
+      { name: 'description', content: 'Try a more natural and holistic approach to improving your reproductive health, and in turn, ability to conceive.' },
+      { property: 'og:description', content: 'Try a more natural and holistic approach to improving your reproductive health, and in turn, ability to conceive.' },
+      { property: 'og:url', content: 'https://glowreflexology.co.uk/reproductive' },
       { property: 'og:site_name', content: 'glow reflexology' },
       { property: 'og:locale', content: 'en_GB' }
     ]

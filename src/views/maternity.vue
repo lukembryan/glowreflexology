@@ -3,7 +3,7 @@
     <div class="title">
       <h1>maternity reflexology</h1>
     </div>
-    <h3>Maternity reflexology is an area of reflexology aimed specifically at couples during <strong>pre-conception, pregnancy and postnatal</strong> periods. Reflexology can be hugely benefitial at these times - research has shown that women who have regular reflexology treatments during pregnancy can shorten the duration of labour, and those having regular treatments may require less pain-relief during the course of delivery*.</h3>
+    <h3>Maternity reflexology is an area of reflexology aimed specifically at couples during <strong>pregnancy and postnatal</strong> periods. Reflexology can be hugely benefitial at these times - research has shown that women who have regular reflexology treatments during pregnancy can shorten the duration of labour, and those having regular treatments may require less pain-relief during the course of delivery*.</h3>
     <img class="image" src="/src/assets/images/beach-clouds.jpg" alt="Pregnancy/maternity reflexology" />
     <div class="box">
       <div>
@@ -12,11 +12,6 @@
       </div>
     </div>
     <div class="body-copy">
-      <h4>Pre-conception</h4>
-      <p>Let reflexology help you get your body and mind to your optimal state for conception.</p>
-      <p>Trying for a baby can be stressful, and it’s a time when it’s more important than ever to relax so that your body can fight off infection and ill health and you can maximise your chances of conception.</p>
-      <p>Your reflexology sessions will last up to 1.5 hours (including consultation) and include lifestyle advice to help promote optimum body ecology for conception.</p>
-      <p>Please get in touch to discuss a treatment plan tailored specifically to you.</p>
       <h4>Pregnancy</h4>
       <h5>1-15 weeks</h5>
       <p>While reflexology can do no harm, it is best to let nature take its course and reflexologists tend not to treat during this time.</p>

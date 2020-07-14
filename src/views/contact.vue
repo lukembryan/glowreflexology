@@ -7,13 +7,14 @@
       <div><strong>Landline</strong><span class="pull-right"><a href="tel:01403256259">01403 256259</a></span></div>
       <div><strong>Mobile</strong><span class="pull-right"><a href="tel:07706279102">07706 279102</a></span></div>
       <div><strong>Email</strong><span class="pull-right"><a href="mailto:emily@glowreflexology.co.uk">emily@glowreflexology.co.uk</a></span></div>
+      <div><strong>Surrey Hills Physiotherapy</strong><a class="pull-right" href="https://www.surreyhillsphysiotherapy.co.uk/contact/" target="_blank">website</a></div>
       <div><strong>Facebook</strong><a class="pull-right" href="https://www.facebook.com/glowwithreflexology/">@glowwithreflexology</a></div>
       <div><strong>Instagram</strong><a class="pull-right" href="https://www.instagram.com/glowwithreflexology/">@glowwithreflexology</a></div>
     </div>
     <div class="body-copy">
       <p>To make a booking, an enquiry, or just to find out a bit more about reflexology, please feel free to get in touch by any of the methods above.</p>
       <p>I am very interested in working at <strong>festivals or corporate wellness days</strong> etc., please don’t hesitate to get in touch for a chat.</p>
-      <h3>availability</h3>
+      <h3>availability - summer 2020</h3>
       <div class="table-responsive">
         <table class="table">
           <thead>
@@ -26,18 +27,18 @@
           <tbody>
             <tr>
               <td>Mon</td>
-              <td>N/A</td>
-              <td>-</td>
+              <td>6:30pm - 9:00pm</td>
+              <td>Home visits</td>
             </tr>
             <tr>
               <td>Tue</td>
-              <td>N/A</td>
-              <td>-</td>
+              <td>6:30pm - 9:00pm</td>
+              <td>Home visits</td>
             </tr>
             <tr>
               <td>Wed</td>
-              <td>9:30am - 2:30pm<hr>6:30pm - 9:00pm</td>
-              <td>Home visits</td>
+              <td>7:00pm - 9:00pm</td>
+              <td>The Barn, SHP</td>
             </tr>
             <tr>
               <td>Thu</td>
@@ -46,8 +47,16 @@
             </tr>
             <tr>
               <td>Fri</td>
-              <td>9:30am - 2:30pm<hr>6:30pm - 9:00pm</td>
-              <td>Home visits</td>
+              <td>
+                9:30am - 2:30pm
+                <br>
+                7:00pm - 9:00pm
+              </td>
+              <td>
+                Home visits
+                <br>
+                The Barn, SHP
+              </td>
             </tr>
             <tr>
               <td>Sat</td>

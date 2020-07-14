@@ -8,27 +8,24 @@
       <router-link to="/contact"><span class="link">enquire here</span></router-link>
     	<h1 class="home lato">find your glow with reflexology</h1>
       <div class="summary">
-        <p>Operating on a mobile basis within a 10 mile radius of Horsham.</p>
-        <p>Member of the Association of Reflexologists.</p>
+        <p>Operating on a mobile basis<br>within a 10 mile radius of Horsham.</p>
+        <p>Member of the <a href="https://www.aor.org.uk/" style="padding: 5px 8px; background-color: #ffffff2e;" class="link-dark" target="_blank">Association of Reflexologists</a></p>
       </div>
     </div>
     <div class="latest-updates">
       <h3>latest updates</h3>
-      <router-link to="/contact">
-        <div class="alert alert-primary" role="alert">
-          <span class="badge">25 Jun 2020</span> Waiting list is now open!  Contact me to be added - I will be in touch as soon as the Government gives me go ahead to re-open.
-        </div>
-      </router-link>
-      <router-link to="/blog/benefits-of-postnatal-reflexology">
-        <div class="alert alert-secondary" role="alert">
-          <span class="badge">23 Jan 2020</span> new blog post!  "benefits of postnatal reflexology"
-        </div>
-      </router-link>
-      <router-link to="/what-to-expect">
-        <div class="alert alert-secondary" role="alert">
-          <span class="badge">9 Jan 2020</span> new stress melting and moisturising hand reflexology treatment now available as an add on to foot reflexology
-        </div>
-      </router-link>
+      <div v-for="(update, index) in updates" :key="index">
+        <router-link :to="update.path" v-if="update.path.indexOf('/') === 0">
+          <div :class="'alert ' + update.type" role="alert">
+            <span class="badge">{{update.date}}</span> {{update.text}}
+          </div>
+        </router-link>
+        <a :href="update.path" target="_blank" v-if="update.path.indexOf('http') === 0">
+          <div :class="'alert ' + update.type" role="alert">
+            <span class="badge">{{update.date}}</span> {{update.text}}
+          </div>
+        </a>
+      </div>
     </div>
     <div class="bg"></div>
   </div>
@@ -39,7 +36,28 @@ import { store } from "../store.js";
 
 export default {
   data () {
-    return {}
+    return {
+      updates: [
+        {
+          type: 'alert-primary',
+          path: '/contact',
+          date: '12 Jul 2020',
+          text: 'Now taking bookings! Evening & Saturday appointments available from WC 13th July'
+        },
+        {
+          type: 'alert-secondary',
+          path: '/pricing-offers',
+          date: '12 Jul 2020',
+          text: 'Availability and pricing updated for Summer 2020'
+        },
+        {
+          type: 'alert-secondary',
+          path: 'https://www.surreyhillsphysiotherapy.co.uk/',
+          date: '12 Jul 2020',
+          text: 'I am so excited to be working with Surrey Hills Physiotherapy (SHP) at their beautiful new venture "The Barn" @ Denbies Wine Estate'
+        }
+      ]
+    }
   },
   created: function(){
     store.state.scrolledBottom = true;

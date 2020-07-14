@@ -7,21 +7,26 @@
     <div class="box">
       <div>
         <h3>"Mummy to be" reflexology package:</h3>
-        <h4>Duration varies - <strong>£170</strong></h4>
+        <h4>Duration varies - <strong>£200</strong></h4>
         <p>This package includes:</p>
         <ul>
           <li>4 x 1 hour reflexology treatments to be used between weeks 16 and 36</li>
           <li>1 x 1.5 hour late pregnancy treatment to be used from weeks 37+</li>
           <li>1 x 1 hour post-natal reflexology treatment to be used within the fourth trimester</li>
         </ul>
-        <p>Separately these treatments would cost £225 so this package represents a £55 saving.  This would make a lovely gift for a mummy to be.</p>
+        <p>Separately these treatments would cost £260 so this package represents a £60 saving.  This would make a lovely gift for a mummy to be.</p>
       </div>
     </div>
     <div class="body-copy">
       <h3>Home visit in Horsham and surrounding areas</h3>
-      <p>1 hour foot reflexology treatment (inc. consultation) - <span class="bold">£35</span></p>
-      <p>1 hour 10-15 minute stress melting foot and hand reflexology treatment (including consultation) - <span class="bold">£40</span></p>
-      <p>1.5 hour pre-conception or late pregnancy (37+ weeks) foot reflexology treatment (inc. consultation) - <span class="bold">£50</span></p>
+      <p>1 hour foot reflexology treatment (inc. consultation) - <span class="bold">£40</span></p>
+      <p>30 minute+ specialised reproductive reflexology consultation or treatment - <span class="bold">£40</span></p>
+      <p>1 hour post-natal reflexology treatment (inc. consultation) - <span class="bold">£40</span></p>
+      <p>1 hour 15 minute stress melting foot and hand reflexology treatment (inc. consultation) - <span class="bold">£45</span></p>
+      <p>1.5 hour late pregnancy (37+ weeks) foot reflexology treatment (inc. consultation) - <span class="bold">£60</span></p>
+      <p>Gift vouchers available for any amount.</p>
+      <h3>Appointments with Surrey Hills Physiotherapy at "The Barn", Denbies Wine Estate</h3>
+      <p>Please enquire and book via the <a href="https://www.surreyhillsphysiotherapy.co.uk/massage-reflexology/" target="_blank">Surrey Hills Physiotherapy website</a>.</p>
       <h3>Offers</h3>
       <p><span class="bold">“Recommend a friend”:</span><br />If you are an existing client and you put a friend or family member in touch, both you and your friend can enjoy £5 off a treatment.</p>
       <p><span class="bold">Loyalty scheme:</span><br />Enjoy your 6th treatment for free</p>

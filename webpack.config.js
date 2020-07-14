@@ -92,6 +92,7 @@ if (process.env.NODE_ENV === 'production') {
         '/',
         '/about-reflexology',
         '/what-to-expect',
+        '/reproductive',
         '/maternity',
         '/pricing-offers',
         '/about-me',

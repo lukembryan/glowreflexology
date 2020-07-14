@@ -3,10 +3,9 @@
     <div class="title">
       <h1>what to expect</h1>
     </div>
-    <h3>Operating on a mobile basis within a 10 mile radius of Horsham.</h3>
+    <h3>Operating on a mobile basis within a 10 mile radius of Horsham. Also at "The Barn", a new venture from Surrey Hills Physiotherapy (SHP), Denbies Wine Estate.</h3>
     <img class="image" src="/src/assets/images/towels-candles.jpg" alt="Treatment room brought to you" />
     <div class="body-copy">
-      <p>If you live a bit further afield, do get in touch to discuss requirements as I will travel for a small extra charge to cover petrol and time.</p>
       <p>Everything required is provided (chair, towels, music etc.). We just need a quiet space so that you can really relax.</p>
       <p>A choice of scented reflexology balm and music is available as everyone relaxes differently. An optional scented eye pillow or weighted blanket are on hand to maximise relaxation.</p>
       <p>The session starts with a consultation which helps me to understand any past or current health or lifestyle issues so that the treatment can be tailored to you.</p>
