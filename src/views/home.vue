@@ -9,7 +9,7 @@
     	<h1 class="home lato">find your glow with reflexology</h1>
       <div class="summary">
         <p>Operating on a mobile basis<br>within a 10 mile radius of Horsham.</p>
-        <p>Member of the <a href="https://www.aor.org.uk/" style="padding: 5px 8px; background-color: #ffffff2e;" class="link-dark" target="_blank">Association of Reflexologists</a></p>
+        <p>Member of the <a href="https://www.aor.org.uk/" style="padding: 5px 8px; background-color: #ffffff2e; line-height: 1.8;" class="link-dark" target="_blank">Association of Reflexologists</a></p>
       </div>
     </div>
     <div class="latest-updates">
@@ -41,8 +41,8 @@ export default {
         {
           type: 'alert-primary',
           path: '/contact',
-          date: '12 Jul 2020',
-          text: 'Now taking bookings! Evening & Saturday appointments available from WC 13th July'
+          date: '15 Sep 2020',
+          text: 'Keyworkers offer: 10% off all treatments for key workers (valid until the end of September).'
         },
         {
           type: 'alert-secondary',
@@ -86,6 +86,7 @@ export default {
   > .body-copy {
     grid-column: 4/9;
     grid-row: 1/3;
+    margin-top: 40px;
     text-align: right;
     .screen-xs-max({
       grid-column: 1/9;

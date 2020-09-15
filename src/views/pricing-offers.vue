@@ -20,16 +20,17 @@
     <div class="body-copy">
       <h3>Home visit in Horsham and surrounding areas</h3>
       <p>1 hour foot reflexology treatment (inc. consultation) - <span class="bold">£40</span></p>
-      <p>30 minute+ specialised reproductive reflexology consultation or treatment - <span class="bold">£40</span></p>
+      <p>30+ minute specialised reproductive reflexology consultation or treatment - <span class="bold">£40</span></p>
       <p>1 hour post-natal reflexology treatment (inc. consultation) - <span class="bold">£40</span></p>
       <p>1 hour 15 minute stress melting foot and hand reflexology treatment (inc. consultation) - <span class="bold">£45</span></p>
       <p>1.5 hour late pregnancy (37+ weeks) foot reflexology treatment (inc. consultation) - <span class="bold">£60</span></p>
+      <p>30+ minute children's reflexology (inc. consultation) - <span class="bold">£30</span></p>
       <p>Gift vouchers available for any amount.</p>
       <h3>Appointments with Surrey Hills Physiotherapy at "The Barn", Denbies Wine Estate</h3>
       <p>Please enquire and book via the <a href="https://www.surreyhillsphysiotherapy.co.uk/massage-reflexology/" target="_blank">Surrey Hills Physiotherapy website</a>.</p>
       <h3>Offers</h3>
       <p><span class="bold">“Recommend a friend”:</span><br />If you are an existing client and you put a friend or family member in touch, both you and your friend can enjoy £5 off a treatment.</p>
-      <p><span class="bold">Loyalty scheme:</span><br />Enjoy your 6th treatment for free</p>
+      <p><span class="bold">Key Workers:</span><br />10% off all treatments for key workers (valid until the end of September).</p>
       <h3>Cancellations</h3>
       <p>While it is appreciated that emergencies can crop up at any time, glow reflexology is a small business so have to reserve the right to charge for the appointment if it is cancelled with less than 24 hours notice.</p>
     </div>
