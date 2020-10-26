@@ -41,14 +41,8 @@ export default {
         {
           type: 'alert-primary',
           path: '/contact',
-          date: '15 Sep 2020',
-          text: 'Keyworkers offer: 10% off all treatments for key workers (valid until the end of September).'
-        },
-        {
-          type: 'alert-secondary',
-          path: '/pricing-offers',
-          date: '12 Jul 2020',
-          text: 'Availability and pricing updated for Summer 2020'
+          date: '25 Oct 2020',
+          text: 'Increased availability - now working weekday mornings'
         },
         {
           type: 'alert-secondary',

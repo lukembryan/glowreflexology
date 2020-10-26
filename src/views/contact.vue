@@ -14,7 +14,7 @@
     <div class="body-copy">
       <p>To make a booking, an enquiry, or just to find out a bit more about reflexology, please feel free to get in touch by any of the methods above.</p>
       <p>I am very interested in working at <strong>festivals or corporate wellness days</strong> etc., please don’t hesitate to get in touch for a chat.</p>
-      <h3>availability - summer 2020</h3>
+      <h3>availability</h3>
       <div class="table-responsive">
         <table class="table">
           <thead>
@@ -27,35 +27,45 @@
           <tbody>
             <tr>
               <td>Mon</td>
-              <td>6:30pm - 9:00pm</td>
+              <td>
+                9:15am - 11:30am
+                <br>
+                6:30pm - 9:00pm
+              </td>
               <td>Home visits</td>
             </tr>
             <tr>
               <td>Tue</td>
-              <td>6:30pm - 9:00pm</td>
+              <td>
+                9:15am - 11:30am
+                <br>
+                6:30pm - 9:00pm
+              </td>
               <td>Home visits</td>
             </tr>
             <tr>
               <td>Wed</td>
               <td>7:00pm - 9:00pm</td>
-              <td>The Barn, SHP</td>
+              <td>The Barn, Denbies, SHP</td>
             </tr>
             <tr>
               <td>Thu</td>
-              <td>6:30pm - 9:00pm</td>
+              <td>
+                9:15am - 11:30am
+                <br>
+                6:30pm - 9:00pm
+              </td>
               <td>Home visits</td>
             </tr>
             <tr>
               <td>Fri</td>
               <td>
-                9:30am - 2:30pm
+                9:15am - 11:30am
                 <br>
-                7:00pm - 9:00pm
+                6:30pm - 9:00pm
               </td>
               <td>
                 Home visits
-                <br>
-                The Barn, SHP
               </td>
             </tr>
             <tr>
