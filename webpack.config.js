@@ -103,6 +103,7 @@ if (process.env.NODE_ENV === 'production') {
         '/blog/how-to-get-more-sleep',
         '/blog/how-to-avoid-festive-fatigue',
         '/blog/benefits-of-postnatal-reflexology',
+        '/blog/newsletter-january-2021',
         '/covid-19'
       ],
       renderer: new Renderer({

@@ -4,7 +4,7 @@
       <h1>blog</h1>
     </div>
     <div class="body-copy">
-      <router-link :to="post.route" :style="{'background-image': 'url(/src/assets/images/' + post.image + ')'}" class="post" v-for="post in posts" v-bind:key="index">
+      <router-link :to="post.route" :style="{'background-image': 'url(/src/assets/images/' + post.image + ')'}" class="post" v-for="post in posts" v-bind:key="post.route">
         <div class="date">{{post.date}}</div>
         <div class="post-title">{{post.title}}</div>
       </router-link>
@@ -17,6 +17,12 @@ export default {
   data () {
     return {
       posts: [
+        {
+          title: 'newsletter January 2021',
+          date: '27th of January 2021',
+          image: 'hand-reflexology-for-sleep.jpg',
+          route: '/blog/newsletter-january-2021'
+        },
         {
           title: 'benefits of postnatal reflexology',
           date: '23rd of January 2020',

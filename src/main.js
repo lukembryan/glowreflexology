@@ -18,6 +18,7 @@ import Blog from './views/blog.vue';
 import HowToGetMoreSleep from './views/how-to-get-more-sleep.vue';
 import HowToAvoidFestiveFatigue from './views/how-to-avoid-festive-fatigue.vue';
 import BenefitsOfPostnatalReflexology from './views/benefits-of-postnatal-reflexology.vue';
+import NewsletterJanuary2021 from './views/newsletter-january-2021.vue';
 import Covid19 from './views/covid-19.vue';
 
 Vue.use(VueRouter);
@@ -166,6 +167,18 @@ const routes = [
       { name: 'description', content: 'Reflexology helps encourage recovery at a time when new mums are often overlooked.' },
       { property: 'og:description', content: 'Reflexology helps encourage recovery at a time when new mums are often overlooked.' },
       { property: 'og:url', content: 'https://glowreflexology.co.uk/blog/benefits-of-postnatal-reflexology' },
+      { property: 'og:site_name', content: 'glow reflexology' },
+      { property: 'og:locale', content: 'en_GB' }
+    ]
+  }},
+  { path: '/blog/newsletter-january-2021', component: NewsletterJanuary2021, meta: {
+    title: 'Newsletter January 2021',
+    metaTags: [
+      { property: 'og:type', content: 'website' },
+      { property: 'og:title', content: 'Newsletter January 2021' },
+      { name: 'description', content: 'People are recognising the importance of self-care at a time when they are working under difficult conditions and facing high levels of anxiety.' },
+      { property: 'og:description', content: 'People are recognising the importance of self-care at a time when they are working under difficult conditions and facing high levels of anxiety.' },
+      { property: 'og:url', content: 'https://glowreflexology.co.uk/blog/newsletter-january-2021' },
       { property: 'og:site_name', content: 'glow reflexology' },
       { property: 'og:locale', content: 'en_GB' }
     ]

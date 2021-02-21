@@ -15,16 +15,19 @@
     <div class="latest-updates">
       <h3>latest updates</h3>
       <div v-for="(update, index) in updates" :key="index">
-        <router-link :to="update.path" v-if="update.path.indexOf('/') === 0">
+        <router-link :to="update.path" v-if="update.path && update.path.indexOf('/') === 0">
           <div :class="'alert ' + update.type" role="alert">
             <span class="badge">{{update.date}}</span> {{update.text}}
           </div>
         </router-link>
-        <a :href="update.path" target="_blank" v-if="update.path.indexOf('http') === 0">
+        <a :href="update.path" target="_blank" v-if="update.path && update.path.indexOf('http') === 0">
           <div :class="'alert ' + update.type" role="alert">
             <span class="badge">{{update.date}}</span> {{update.text}}
           </div>
         </a>
+        <div v-if="!update.path" :class="'alert ' + update.type" role="alert">
+          <span class="badge">{{update.date}}</span> {{update.text}}
+        </div>
       </div>
     </div>
     <div class="bg"></div>
@@ -40,15 +43,21 @@ export default {
       updates: [
         {
           type: 'alert-primary',
-          path: '/contact',
-          date: '25 Oct 2020',
-          text: 'Increased availability - now working weekday mornings'
+          path: null,
+          date: '18 Feb 2021',
+          text: 'Temporarily closed due to COVID-19'
         },
         {
           type: 'alert-secondary',
-          path: 'https://www.surreyhillsphysiotherapy.co.uk/',
-          date: '12 Jul 2020',
-          text: 'I am so excited to be working with Surrey Hills Physiotherapy (SHP) at their beautiful new venture "The Barn" @ Denbies Wine Estate'
+          path: '/blog/newsletter-january-2021',
+          date: '27 Jan 2021',
+          text: 'Newsletter January 2021'
+        },
+        {
+          type: 'alert-secondary',
+          path: '/contact',
+          date: '25 Oct 2020',
+          text: 'Increased availability - now working weekday mornings'
         }
       ]
     }
